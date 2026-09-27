@@ -1,26 +1,30 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the accompanying manuscript."
-title: "Myeloid Cell Atlas across Human Cancers"
+title: "Myeloid differentiation trajectories shape response to combined immuno-chemotherapy across multiple solid tumors"
 abstract: >-
-  Analysis code for a pan-cancer myeloid / macrophage single-cell atlas
-  spanning ESCC, PC, AML, NSCLC and TNBC cohorts, including subclustering,
-  cell-cell communication, trajectory, co-expression networks, NMF
-  meta-programs and signature-based prediction.
+  Analysis code for a pan-cancer tumor-infiltrating myeloid (TIM) atlas of
+  four solid malignancies (NSCLC, TNBC, PC, ESCC), including TIM subclustering,
+  cell-cell communication (CellChat), pseudotime trajectory (monocle3),
+  co-expression networks (hdWGCNA) and statistical modelling of clinical
+  response.
 type: software
 authors:
   - family-names: Wang
     given-names: Guosheng
-    alias: GoulsonWang
-    website: "https://github.com/GoulsonWang"
+  - family-names: Huang
+    given-names: Yue
+  - family-names: Ding
+    given-names: Yuhan
+  - family-names: Gao
+    given-names: Xiangyuan
+  - family-names: Zhai
+    given-names: Siqi
+  - family-names: Zhang
+    given-names: Fan
+    email: 007631@hrbmu.edu.cn
+    affiliation: "NHC Key Laboratory of Cell Transplantation, The First Affiliated Hospital of Harbin Medical University, Harbin, China"
 repository-code: "https://github.com/GoulsonWang/Myeloid_Cell_Atlas"
 license: MIT
 # --- The fields below will be completed once the paper is published ---
-# preferred-citation:
-#   type: article
-#   title: "<PAPER TITLE>"
-#   authors:
-#     - family-names: Wang
-#       given-names: Guosheng
-#   journal: "<JOURNAL>"
-#   year: <YEAR>
-#   doi: "10.xxxx/xxxxx"
+# doi: "10.xxxx/xxxxx"
+# date-released: <YYYY-MM-DD>

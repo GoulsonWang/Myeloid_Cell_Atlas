@@ -1,12 +1,27 @@
-# Myeloid Cell Atlas across Human Cancers
+# Myeloid differentiation trajectories shape response to combined immuno-chemotherapy across multiple solid tumors
 
-Analysis code for the pan-cancer **myeloid / macrophage cell atlas** study.
-This repository contains the R / shell scripts used to build, annotate, and
-interrogate the myeloid compartment across six single-cell RNA-seq cohorts
-(**ESCC, PC, AML, NSCLC, TNBC1, TNBC2**), together with the downstream
-analyses (subclustering, cell-cell communication, trajectory, co-expression
-networks, NMF meta-programs, signature-based prediction and an interactive
-Shiny explorer).
+Analysis code for the study **"Myeloid differentiation trajectories shape
+response to combined immuno-chemotherapy across multiple solid tumors."**
+
+This repository contains the R / shell scripts used to integrate, annotate and
+interrogate the **tumor-infiltrating myeloid (TIM)** compartment across four
+solid malignancies — **NSCLC, TNBC, PC and ESCC** — together with the
+downstream analyses (myeloid subclustering, cell-cell communication,
+pseudotime trajectory, co-expression networks and statistical modelling of
+clinical response).
+
+**Cohort.** 71 tumor samples from 53 patients across four cohorts:
+NSCLC (`GSE207422`), TNBC (`GSE169246`), PC (`GSE267814`) and ESCC
+(`OMIX005710`). After quality control, **401,550 cells** were retained;
+**74,085 myeloid and mast cells** were resolved into **12 functional subtypes**.
+
+**Key findings.** Two conserved, clinically opposing macrophage subsets —
+**Macro-APOE** (cholesterol-metabolic, matrix-remodelling, associated with
+non-response) and **Macro-MS4A6A** (antigen-presenting, trafficking,
+associated with favourable response) — arise from a shared monocyte-derived
+differentiation trajectory. Co-expression network rewiring (hdWGCNA) further
+links successful response to a retreat from hyper-metabolic programs toward
+homeostatic, tissue-stabilising networks.
 
 > **Note** — only **code and documentation** are tracked in this repository.
 > Raw sequencing data, intermediate `Seurat`/`RDS` objects, figures and tables
@@ -40,24 +55,40 @@ Shiny explorer).
 ├── .gitignore               # whitelist: code + docs only
 ├── archive/                 # deprecated / test scripts (kept for provenance)
 ├── data/                    # data-import helper scripts (per cohort)
-│   ├── ESCC/  PC/  AML/  NSCLC/  TNBC1/  TNBC2/
+│   └── ESCC/  PC/  AML/  NSCLC/  TNBC1/  TNBC2/
 └── WorkDir/                 # main analysis, one folder per step
     ├── preparing/           #  1. load / QC / merge per cohort
     ├── DoubletFinder/       #  2. doublet detection & removal
-    ├── SCT_Integrate/       #  3. SCTransform-based integration
+    ├── SCT_Integrate/       #  3. SCTransform + RPCA integration
     ├── Log_Integrate/       #  3b. LogNormalize-based integration
-    ├── Annotation/          #  4. major-lineage annotation
+    ├── Annotation/          #  4. lineage annotation & validation
     ├── Clustering_subtype/  #  5. myeloid / T-NK subclustering
-    ├── Description/         #  6. subtype composition & correspondence
-    ├── GeneSetEnrichment/   #  7. GSEA / over-representation analysis
+    ├── Description/         #  6. log-linear models & correspondence analysis
+    ├── GeneSetEnrichment/   #  7. GSEA / over-representation (KEGG)
     ├── Cellchat/            #  8. cell-cell communication
-    ├── NMF/                 #  9. NMF meta-programs
-    ├── Monocle/             # 10. pseudotime / trajectory (monocle3)
-    ├── hdWGCNA/             # 11. co-expression networks
-    ├── Prediction/          # 12. signature-based prediction
-    ├── paper_writing/       # 13. main-figure generation
-    └── Shiny/               # 14. interactive Shiny application
+    ├── Monocle/             #  9. pseudotime / trajectory (monocle3)
+    ├── hdWGCNA/             # 10. co-expression networks
+    ├── paper_writing/       # 11. main-figure generation
+    ├── NMF/                 #  (additional) NMF programs
+    ├── Prediction/          #  (additional) signature-based prediction
+    └── Shiny/               #  (additional) interactive Shiny application
 ```
+
+The four cohorts analysed in the manuscript are **NSCLC, TNBC, PC and ESCC**
+(the manuscript's TNBC cohort corresponds to `TNBC1` / `GSE169246`).
+
+The repository additionally retains several **exploratory datasets and modules
+that are _not_ part of the final manuscript**, kept only for completeness and
+provenance:
+
+- the **AML** cohort (`data/AML/`, `WorkDir/**/AML/`, `GSE198052`);
+- a second TNBC dataset, **TNBC2** (`GSE266919`), used for cross-checking;
+- the melanoma dataset **GSE123813**, used in
+  `WorkDir/Clustering_subtype/code/Myeloid/Map_Annotation.R`;
+- the `NMF/`, `Prediction/` and `Shiny/` analysis modules.
+
+Only the four manuscript cohorts and the modules from `preparing` through
+`paper_writing` are described in the paper.
 
 Most step folders follow the same internal convention:
 
@@ -76,7 +107,7 @@ The scripts are organised as a linear pipeline. Numbers below correspond to
 the folder ordering and to the computational dependency between steps.
 
 ```
-Raw data (GEO / in-house)
+Raw data (GEO / NGDC)
         |
         v
 [1] preparing            load, QC, per-cohort merge
@@ -85,28 +116,23 @@ Raw data (GEO / in-house)
 [2] DoubletFinder        detect & remove doublets
         |
         v
-[3] SCT_Integrate        SCTransform integration
-[3b] Log_Integrate       LogNormalize integration  (alternative strategies)
+[3] SCT_Integrate        SCTransform + RPCA integration (IntegrateLayers)
+[3b] Log_Integrate       LogNormalize integration  (alternative strategy)
         |
         v
-[4] Annotation           major-lineage annotation
+[4] Annotation           major cell-lineage annotation & validation
         |
         v
-[5] Clustering_subtype   myeloid subclustering (T/NK in parallel)
+[5] Clustering_subtype   myeloid subclustering (T/NK via starCAT in parallel)
         |
-        +-- [6] Description          composition / correspondence tests
-        +-- [7] GeneSetEnrichment    GSEA / ORA
+        +-- [6] Description          log-linear models / correspondence analysis
+        +-- [7] GeneSetEnrichment    GSEA / ORA (KEGG, clusterProfiler)
         +-- [8] Cellchat             ligand-receptor communication
-        +-- [9] NMF                  meta-program decomposition
-        +-- [10] Monocle             pseudotime trajectory
-        +-- [11] hdWGCNA             co-expression modules
-        +-- [12] Prediction          signature transfer to bulk / other data
+        +-- [9] Monocle              monocle3 pseudotime trajectory
+        +-- [10] hdWGCNA             co-expression modules
                     |
                     v
-              [13] paper_writing   main figures
-                    |
-                    v
-              [14] Shiny           interactive explorer
+              [11] paper_writing   main figures
 ```
 
 Scripts were executed on a SLURM cluster; the accompanying `sbatch*.sh`
@@ -118,46 +144,48 @@ files document resource requests and the run order.
 
 | # | Folder | What it does |
 |---|--------|--------------|
-| 1 | `preparing/` | Per-cohort loading, quality control, metadata and sample renaming for ESCC, PC, AML, NSCLC, TNBC1, TNBC2. |
-| 2 | `DoubletFinder/` | Doublet detection per sample and removal after integration. |
-| 3 | `SCT_Integrate/` | SCTransform normalisation, integration and integration-quality evaluation (per cohort + total data). |
-| 3b | `Log_Integrate/` | LogNormalize-based integration used as a parallel/validation strategy. |
-| 4 | `Annotation/` | Major cell-lineage annotation, marker inspection, and validation on held-out cohorts (TNBC1, NSCLC). |
-| 5 | `Clustering_subtype/` | Myeloid subset re-integration, clustering sweeps, marker discovery and subtype annotation; parallel T/NK branch (`T_NK/`, SCTransform / starCAT annotation). |
-| 6 | `Description/` | Distribution tests, high-dimensional contingency tables and correspondence analysis of subtypes across cancers. |
-| 7 | `GeneSetEnrichment/` | GSEA / ORA input preparation, background-gene handling and radar plots. |
-| 8 | `Cellchat/` | CellChat cell-cell communication analysis on the merged object. |
-| 9 | `NMF/` | Non-negative matrix factorisation to extract meta-programs (with and without regression of covariates). |
-| 10 | `Monocle/` | monocle3 pseudotime / trajectory, branch analysis and branch-specific GSEA. |
-| 11 | `hdWGCNA/` | hdWGCNA co-expression networks for ESCC and PC, module gene-set curation and DME analysis. |
-| 12 | `Prediction/` | Signature-based prediction of myeloid states in bulk / external datasets (e.g. TCGA ESCC, GSE197677). |
-| 13 | `paper_writing/` | Scripts reproducing the main result figures (`Result1`-`Result4`). |
-| 14 | `Shiny/` | `ShinyCell2`-based interactive application for exploring the atlas (`shinyApp/`). |
+| 1 | `preparing/` | Per-cohort loading, quality control, metadata and sample renaming for ESCC, PC, NSCLC, TNBC. |
+| 2 | `DoubletFinder/` | Doublet detection per sample (pN = 0.25, expected doublet rate = 0.06) and removal after integration. |
+| 3 | `SCT_Integrate/` | SCTransform normalisation, RPCA (IntegrateLayers) integration and integration-quality evaluation. |
+| 3b | `Log_Integrate/` | LogNormalize-based integration used as a parallel strategy. |
+| 4 | `Annotation/` | Major cell-lineage annotation, marker inspection, and validation against original study annotations. |
+| 5 | `Clustering_subtype/` | Myeloid subset re-integration, clustering sweeps, marker discovery and subtype annotation; parallel T/NK branch (`T_NK/`, starCAT annotation against the TCAT.V1 reference). |
+| 6 | `Description/` | Linear mixed-effects models (lme4), log-linear interaction modelling (MASS) and correspondence analysis (`ca`) of subtypes across cancers. |
+| 7 | `GeneSetEnrichment/` | GSEA / ORA on the KEGG database via `clusterProfiler`. |
+| 8 | `Cellchat/` | CellChat cell-cell communication between myeloid subsets and T-cell states. |
+| 9 | `Monocle/` | monocle3 pseudotime / trajectory, branch analysis and branch-specific GSEA. |
+| 10 | `hdWGCNA/` | hdWGCNA co-expression networks for ESCC and PC (metacells, k = 25), module gene-set curation and DME analysis. |
+| 11 | `paper_writing/` | Scripts reproducing the main result figures (`Result1`-`Result4`). |
+| — | `NMF/`, `Prediction/`, `Shiny/` | Additional, exploratory analyses not included in the final manuscript. |
+
+**TIM subtypes resolved (12).** Three dendritic-cell subsets (DC-HLA,
+DC-LAMP3, DC-CPVL), one mast-cell population, two monocyte lineages
+(Mono-FCN1, Mono-TIMP1), five macrophage subtypes (Macro-MS4A6A, Macro-APOE,
+Macro-FOSB, Macro-CCL, Macro-MARCO) and one neutrophil population
+(Neutro-FCGR3B).
 
 ---
 
 ## Requirements
 
-Analyses were written in **R** (>= 4.3). Core packages:
+Analyses were written in **R** (Seurat **v5.2.1**). Core packages:
 
 **Single-cell** — `Seurat` (v5), `SeuratObject`, `sctransform`, `DoubletFinder`,
 `SingleCellExperiment`, `SeuratDisk`, `hdf5r`, `scSHC`.
 
 **Trajectory / networks** — `monocle3`, `hdWGCNA`, `WGCNA`, `igraph`, `ggraph`, `tidygraph`.
 
-**Communication / enrichment** — `CellChat`, `clusterProfiler`, `UCell`.
+**Communication / enrichment** — `CellChat`, `clusterProfiler`, `UCell`; T-cell
+annotation via **starCAT** / TCAT.V1 (Python, run through `reticulate`).
 
-**Factorisation / stats** — `NMF`, `lme4`, `lmerTest`, `nnet`, `MASS`, `ca`.
+**Statistics** — `lme4`, `lmerTest`, `MASS` (log-linear models), `ca`
+(correspondence analysis), `NMF`, `nnet`.
 
 **Visualisation** — `ggplot2`, `cowplot`, `patchwork`, `ggrepel`, `ggpubr`,
 `RColorBrewer`, `clustree`, `pheatmap`, `gridExtra`, `pdftools`.
 
-**App / IO** — `shiny`, `shinyhelper`, `DT`, `bslib`, `ShinyCell2`, `data.table`.
-
-Shell scripts assume a **SLURM** scheduler. `Python` (via `reticulate`) is
-used indirectly by a few tools.
-
-A minimal installation helper is provided at `WorkDir/hdWGCNA/code/install.R`.
+Shell scripts assume a **SLURM** scheduler. A minimal installation helper is
+provided at `WorkDir/hdWGCNA/code/install.R`.
 
 ---
 
@@ -165,13 +193,14 @@ A minimal installation helper is provided at `WorkDir/hdWGCNA/code/install.R`.
 
 This repository does **not** ship raw data or large intermediate objects.
 
-- Public datasets were downloaded from **GEO**; the corresponding accession
-  numbers are referenced in the scripts (e.g. `GSE198052` for AML,
-  `GSE266919` for TNBC2, `GSE197677` and TCGA for the prediction analyses).
-- In-house cohorts (ESCC, PC, NSCLC, TNBC1) should be requested from the
-  corresponding authors, subject to institutional policy.
-- Processed objects are available from the authors on reasonable request,
-  or via the data-accession statement of the accompanying paper.
+The study used four publicly available single-cell datasets:
+
+| Cancer type | Accession | Repository |
+|-------------|-----------|------------|
+| NSCLC | `GSE207422` | GEO |
+| TNBC  | `GSE169246` | GEO |
+| PC    | `GSE267814` | GEO |
+| ESCC  | `OMIX005710` | NGDC |
 
 The `*.txt` files under `WorkDir/*/data/**/str(...).txt` are lightweight
 `str()` dumps of the `Seurat` objects; they are kept only to document object
@@ -182,9 +211,9 @@ data.
 
 ## How to run
 
-1. Obtain the raw / processed datasets and place them under `data/<COHORT>/`
+1. Download the four datasets above and place them under `data/<COHORT>/`
    following the paths hard-coded (or configured) in `WorkDir/preparing/code/`.
-2. Run the modules **in order** (1 -> 14). Each module folder contains its own
+2. Run the modules **in order** (1 -> 11). Each module folder contains its own
    `sbatch*.sh`; submit with `sbatch <script>.sh`, or source the `.R` scripts
    interactively for smaller steps.
 3. Paths are currently absolute/cluster-specific. Adjust the input/output
@@ -210,11 +239,13 @@ Examples: `WorkDir/Description/code/test.R`, `WorkDir/Shiny/build_shiny_failed.t
 If you use this code, please cite the accompanying manuscript:
 
 ```
-<AUTHORS>. <TITLE>. <JOURNAL> (<YEAR>). doi:<DOI>
+Wang G, Huang Y, Ding Y, Gao X, Zhai S, Zhang F.
+Myeloid differentiation trajectories shape response to combined
+immuno-chemotherapy across multiple solid tumors. (2025).
 ```
 
-A machine-readable `CITATION.cff` is included and will be updated once the
-paper is published.
+A machine-readable `CITATION.cff` is included and will be updated with the
+journal reference and DOI once the paper is published.
 
 ---
 
