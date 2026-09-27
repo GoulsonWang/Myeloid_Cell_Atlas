@@ -111,6 +111,25 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
+.DS_Store?
+._*
 Thumbs.db
 *.swp
 *~
+
+# ---------- 9. 排除与手稿无关的内容（按论文最小化）----------
+# 这些数据集/模块未出现在手稿中，不随代码一起发布。
+# 注：本地磁盘上仍保留这些文件，仅从 Git 仓库中移除。
+/archive/
+/WorkDir/NMF/
+/WorkDir/Prediction/
+/WorkDir/preparing/code/AML/
+/WorkDir/preparing/data/AML/
+/WorkDir/preparing/code/TNBC2/
+/WorkDir/preparing/data/TNBC2/
+/WorkDir/SCT_Integrate/code/AML/
+/WorkDir/SCT_Integrate/data/AML/
+/WorkDir/SCT_Integrate/code/TNBC2/
+/WorkDir/SCT_Integrate/data/TNBC2/
+/data/TNBC2/
+/WorkDir/Clustering_subtype/code/Myeloid/Map_Annotation.R

@@ -26,7 +26,6 @@ homeostatic, tissue-stabilising networks.
 > **Note** — only **code and documentation** are tracked in this repository.
 > Raw sequencing data, intermediate `Seurat`/`RDS` objects, figures and tables
 > are intentionally **excluded** (see [Data availability](#data-availability)).
-> Experimental / deprecated scripts are preserved under [`archive/`](archive/).
 
 ---
 
@@ -38,7 +37,6 @@ homeostatic, tissue-stabilising networks.
 - [Requirements](#requirements)
 - [Data availability](#data-availability)
 - [How to run](#how-to-run)
-- [Archive](#archive)
 - [Citation](#citation)
 - [License](#license)
 - [Contact](#contact)
@@ -53,9 +51,8 @@ homeostatic, tissue-stabilising networks.
 ├── LICENSE                  # MIT
 ├── CITATION.cff             # machine-readable citation
 ├── .gitignore               # whitelist: code + docs only
-├── archive/                 # deprecated / test scripts (kept for provenance)
 ├── data/                    # data-import helper scripts (per cohort)
-│   └── ESCC/  PC/  AML/  NSCLC/  TNBC1/  TNBC2/
+│   └── ESCC/  PC/  NSCLC/  TNBC1/
 └── WorkDir/                 # main analysis, one folder per step
     ├── preparing/           #  1. load / QC / merge per cohort
     ├── DoubletFinder/       #  2. doublet detection & removal
@@ -69,26 +66,14 @@ homeostatic, tissue-stabilising networks.
     ├── Monocle/             #  9. pseudotime / trajectory (monocle3)
     ├── hdWGCNA/             # 10. co-expression networks
     ├── paper_writing/       # 11. main-figure generation
-    ├── NMF/                 #  (additional) NMF programs
-    ├── Prediction/          #  (additional) signature-based prediction
     └── Shiny/               #  (additional) interactive Shiny application
 ```
 
 The four cohorts analysed in the manuscript are **NSCLC, TNBC, PC and ESCC**
-(the manuscript's TNBC cohort corresponds to `TNBC1` / `GSE169246`).
-
-The repository additionally retains several **exploratory datasets and modules
-that are _not_ part of the final manuscript**, kept only for completeness and
-provenance:
-
-- the **AML** cohort (`data/AML/`, `WorkDir/**/AML/`, `GSE198052`);
-- a second TNBC dataset, **TNBC2** (`GSE266919`), used for cross-checking;
-- the melanoma dataset **GSE123813**, used in
-  `WorkDir/Clustering_subtype/code/Myeloid/Map_Annotation.R`;
-- the `NMF/`, `Prediction/` and `Shiny/` analysis modules.
-
-Only the four manuscript cohorts and the modules from `preparing` through
-`paper_writing` are described in the paper.
+(the manuscript's TNBC cohort corresponds to `TNBC1` / `GSE169246`). The
+repository mirrors exactly the analyses described in the paper, from
+`preparing` through `paper_writing`, and additionally ships the `Shiny/`
+module as an interactive explorer of the atlas.
 
 Most step folders follow the same internal convention:
 
@@ -156,7 +141,7 @@ files document resource requests and the run order.
 | 9 | `Monocle/` | monocle3 pseudotime / trajectory, branch analysis and branch-specific GSEA. |
 | 10 | `hdWGCNA/` | hdWGCNA co-expression networks for ESCC and PC (metacells, k = 25), module gene-set curation and DME analysis. |
 | 11 | `paper_writing/` | Scripts reproducing the main result figures (`Result1`-`Result4`). |
-| — | `NMF/`, `Prediction/`, `Shiny/` | Additional, exploratory analyses not included in the final manuscript. |
+| — | `Shiny/` | Interactive Shiny application (`ShinyCell2`) to explore the myeloid atlas. |
 
 **TIM subtypes resolved (12).** Three dendritic-cell subsets (DC-HLA,
 DC-LAMP3, DC-CPVL), one mast-cell population, two monocyte lineages
@@ -221,16 +206,6 @@ data.
 
 > The scripts are shared **for transparency and reproducibility**, not as a
 > turn-key pipeline: they are the exact cluster scripts used for the study.
-
----
-
-## Archive
-
-`archive/` keeps scripts that were used during development but are **not part
-of the final pipeline** (unit tests, ad-hoc experiments, failed builds, trial
-runs). They are retained so that the analysis history remains traceable.
-Examples: `WorkDir/Description/code/test.R`, `WorkDir/Shiny/build_shiny_failed.txt`,
-`WorkDir/*/test*.R`.
 
 ---
 
