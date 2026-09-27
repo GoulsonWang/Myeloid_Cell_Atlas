@@ -1,0 +1,312 @@
+> str(SDataListTransformed[[1]])
+Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  ..@ assays      :List of 2
+  .. ..$ RNA:Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ layers    :List of 1
+  .. .. .. .. ..$ counts:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:3903947] 3 24 43 55 60 62 73 78 84 109 ...
+  .. .. .. .. .. .. ..@ p       : int [1:1964] 0 2325 4269 6036 7750 10370 12718 15033 17391 19694 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 36601 1963
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:3903947] 1 1 1 1 2 1 1 1 3 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:1963, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. ..$ dim     : int [1:2] 1963 1
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:36601, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:36601] "MIR1302-2HG" "FAM138A" "OR4F5" "AL627309.1" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. ..$ dim     : int [1:2] 36601 1
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:36601] "MIR1302-2HG" "FAM138A" "OR4F5" "AL627309.1" ...
+  .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. ..@ default   : int 1
+  .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. ..@ meta.data :'data.frame': 36601 obs. of  0 variables
+  .. .. .. ..@ misc      : Named list()
+  .. .. .. ..@ key       : chr "rna_"
+  .. ..$ SCT:Formal class 'SCTAssay' [package "Seurat"] with 9 slots
+  .. .. .. ..@ SCTModel.list:List of 1
+  .. .. .. .. ..$ counts:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':        16927 obs. of  12 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate       : num [1:16927] 0.00255 0.02853 0.02089 0.06826 0.01936 ...
+  .. .. .. .. .. .. .. ..$ gmean                : num [1:16927] 0.00177 0.02117 0.01521 0.05143 0.01372 ...
+  .. .. .. .. .. .. .. ..$ variance             : num [1:16927] 0.00254 0.03774 0.02498 0.08504 0.0205 ...
+  .. .. .. .. .. .. .. ..$ residual_mean        : num [1:16927] -2.09e-05 -4.09e-04 -8.60e-03 -9.96e-03 -6.41e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_variance    : num [1:16927] 0.0634 0.723 0.507 0.7968 0.4661 ...
+  .. .. .. .. .. .. .. ..$ theta                : num [1:16927] Inf 0.1265 0.0782 0.4687 0.068 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)          : num [1:16927] -14.5 -11.9 -12.2 -11 -12.3 ...
+  .. .. .. .. .. .. .. ..$ log_umi              : num [1:16927] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. .. ..$ genes_log_gmean_step1: logi [1:16927] FALSE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. .. .. .. ..$ step1_theta          : num [1:16927] NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_(Intercept)    : num [1:16927] NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_log_umi        : num [1:16927] NA NA NA NA NA ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':        1963 obs. of  3 variables:
+  .. .. .. .. .. .. .. ..$ umi        : num [1:1963] 5590 5235 3588 3571 5565 ...
+  .. .. .. .. .. .. .. ..$ log_umi    : num [1:1963] 3.75 3.72 3.55 3.55 3.75 ...
+  .. .. .. .. .. .. .. ..$ cells_step1: logi [1:1963] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -44.3 44.3
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -8.09 8.09
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 1963
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -44.3 44.3
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -8.09 8.09
+  .. .. .. .. .. .. ..@ median_umi        : num 4912
+  .. .. .. ..@ counts       :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:3909156] 6 15 23 27 29 36 40 45 56 59 ...
+  .. .. .. .. .. ..@ p       : int [1:1964] 0 2301 4224 5989 7689 10278 12593 14889 17232 19515 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 16927 1963
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:16927] "AL627309.1" "AL627309.5" "LINC01409" "LINC01128" ...
+  .. .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. .. ..@ x       : num [1:3909156] 1 1 1 2 1 1 1 3 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:3909156] 6 15 23 27 29 36 40 45 56 59 ...
+  .. .. .. .. .. ..@ p       : int [1:1964] 0 2301 4224 5989 7689 10278 12593 14889 17232 19515 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 16927 1963
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:16927] "AL627309.1" "AL627309.5" "LINC01409" "LINC01128" ...
+  .. .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. .. ..@ x       : num [1:3909156] 0.693 0.693 0.693 1.099 0.693 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num [1:3000, 1:1963] -0.215 -0.646 -0.235 -0.488 1.434 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:3000] "HES4" "ISG15" "AGRN" "TNFRSF18" ...
+  .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. ..@ assay.orig   : chr "RNA"
+  .. .. .. ..@ var.features : chr [1:3000] "LYZ" "CCL4" "S100A8" "IGFBP7" ...
+  .. .. .. ..@ meta.features:'data.frame':      16927 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "sct_"
+  ..@ meta.data   :'data.frame':        1963 obs. of  9 variables:
+  .. ..$ orig.ident     : chr [1:1963] "1" "1" "1" "1" ...
+  .. ..$ nCount_RNA     : num [1:1963] 5590 5235 3588 3571 5565 ...
+  .. ..$ nFeature_RNA   : int [1:1963] 2325 1944 1767 1714 2620 2348 2315 2358 2303 1605 ...
+  .. ..$ percent.MT     : num [1:1963] 5.96 7.47 3.09 8.29 3.74 ...
+  .. ..$ percent.HB     : num [1:1963] 0 0 0 0 0 ...
+  .. ..$ nCount_SCT     : num [1:1963] 5235 5054 4335 4319 5289 ...
+  .. ..$ nFeature_SCT   : int [1:1963] 2301 1923 1765 1700 2589 2315 2296 2343 2283 1595 ...
+  .. ..$ SCT_snn_res.0.8: Factor w/ 16 levels "0","1","2","3",..: 9 4 1 1 7 3 2 1 3 1 ...
+  .. ..$ seurat_clusters: Factor w/ 16 levels "0","1","2","3",..: 9 4 1 1 7 3 2 1 3 1 ...
+  ..@ active.assay: chr "SCT"
+  ..@ active.ident: Factor w/ 16 levels "0","1","2","3",..: 9 4 1 1 7 3 2 1 3 1 ...
+  .. ..- attr(*, "names")= chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  ..@ graphs      :List of 2
+  .. ..$ SCT_nn :Formal class 'Graph' [package "SeuratObject"] with 7 slots
+  .. .. .. ..@ assay.used: chr "SCT"
+  .. .. .. ..@ i         : int [1:39260] 0 191 260 344 435 580 819 1178 1237 1271 ...
+  .. .. .. ..@ p         : int [1:1964] 0 16 27 31 43 58 71 94 126 145 ...
+  .. .. .. ..@ Dim       : int [1:2] 1963 1963
+  .. .. .. ..@ Dimnames  :List of 2
+  .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. ..@ x         : num [1:39260] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. ..@ factors   : list()
+  .. ..$ SCT_snn:Formal class 'Graph' [package "SeuratObject"] with 7 slots
+  .. .. .. ..@ assay.used: chr "SCT"
+  .. .. .. ..@ i         : int [1:114631] 0 34 76 191 231 232 260 329 344 347 ...
+  .. .. .. ..@ p         : int [1:1964] 0 62 115 197 270 313 360 434 505 565 ...
+  .. .. .. ..@ Dim       : int [1:2] 1963 1963
+  .. .. .. ..@ Dimnames  :List of 2
+  .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. ..@ x         : num [1:114631] 1 0.1111 0.0811 0.3793 0.1429 ...
+  .. .. .. ..@ factors   : list()
+  ..@ neighbors   : list()
+  ..@ reductions  :List of 2
+  .. ..$ pca :Formal class 'DimReduc' [package "SeuratObject"] with 9 slots
+  .. .. .. ..@ cell.embeddings           : num [1:1963, 1:50] -1.37 -9.76 -8.25 -9.26 -11.52 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. .. ..$ : chr [1:50] "PC_1" "PC_2" "PC_3" "PC_4" ...
+  .. .. .. ..@ feature.loadings          : num [1:3000, 1:50] 0.1023 -0.0519 0.077 0.0427 -0.0184 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:3000] "LYZ" "CCL4" "S100A8" "IGFBP7" ...
+  .. .. .. .. .. ..$ : chr [1:50] "PC_1" "PC_2" "PC_3" "PC_4" ...
+  .. .. .. ..@ feature.loadings.projected: num[0 , 0 ] 
+  .. .. .. ..@ assay.used                : chr "SCT"
+  .. .. .. ..@ global                    : logi FALSE
+  .. .. .. ..@ stdev                     : num [1:50] 17.54 13.85 10.31 9.84 8.28 ...
+  .. .. .. ..@ jackstraw                 :Formal class 'JackStrawData' [package "SeuratObject"] with 4 slots
+  .. .. .. .. .. ..@ empirical.p.values     : num[0 , 0 ] 
+  .. .. .. .. .. ..@ fake.reduction.scores  : num[0 , 0 ] 
+  .. .. .. .. .. ..@ empirical.p.values.full: num[0 , 0 ] 
+  .. .. .. .. .. ..@ overall.p.values       : num[0 , 0 ] 
+  .. .. .. ..@ misc                      :List of 1
+  .. .. .. .. ..$ total.variance: num 3924
+  .. .. .. ..@ key                       : chr "PC_"
+  .. ..$ umap:Formal class 'DimReduc' [package "SeuratObject"] with 9 slots
+  .. .. .. ..@ cell.embeddings           : num [1:1963, 1:2] 0.403 4.526 5.652 6.013 5.421 ...
+  .. .. .. .. ..- attr(*, "scaled:center")= num [1:2] -0.9752 0.0347
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:1963] "AAACCTGCAAGTTAAG-1" "AAACCTGCACAAGTAA-1" "AAACCTGCAGAGTGTG-1" "AAACCTGCAGGAATGC-1" ...
+  .. .. .. .. .. ..$ : chr [1:2] "umap_1" "umap_2"
+  .. .. .. ..@ feature.loadings          : num[0 , 0 ] 
+  .. .. .. ..@ feature.loadings.projected: num[0 , 0 ] 
+  .. .. .. ..@ assay.used                : chr "SCT"
+  .. .. .. ..@ global                    : logi TRUE
+  .. .. .. ..@ stdev                     : num(0) 
+  .. .. .. ..@ jackstraw                 :Formal class 'JackStrawData' [package "SeuratObject"] with 4 slots
+  .. .. .. .. .. ..@ empirical.p.values     : num[0 , 0 ] 
+  .. .. .. .. .. ..@ fake.reduction.scores  : num[0 , 0 ] 
+  .. .. .. .. .. ..@ empirical.p.values.full: num[0 , 0 ] 
+  .. .. .. .. .. ..@ overall.p.values       : num[0 , 0 ] 
+  .. .. .. ..@ misc                      : list()
+  .. .. .. ..@ key                       : chr "umap_"
+  ..@ images      : list()
+  ..@ project.name: chr "SeuratProject"
+  ..@ misc        : list()
+  ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. ..$ : int [1:3] 5 0 2
+  ..@ commands    :List of 5
+  .. ..$ SCTransform.RNA      :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "SCTransform.RNA"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-15 09:47:28"
+  .. .. .. ..@ assay.used : chr "RNA"
+  .. .. .. ..@ call.string: chr [1:2] "SCTransform(SDataList[[i]], vars.to.regress = \"percent.MT\", " "    verbose = FALSE)"
+  .. .. .. ..@ params     :List of 15
+  .. .. .. .. ..$ assay                  : chr "RNA"
+  .. .. .. .. ..$ new.assay.name         : chr "SCT"
+  .. .. .. .. ..$ do.correct.umi         : logi TRUE
+  .. .. .. .. ..$ ncells                 : num 5000
+  .. .. .. .. ..$ variable.features.n    : num 3000
+  .. .. .. .. ..$ variable.features.rv.th: num 1.3
+  .. .. .. .. ..$ vars.to.regress        : chr "percent.MT"
+  .. .. .. .. ..$ do.scale               : logi FALSE
+  .. .. .. .. ..$ do.center              : logi TRUE
+  .. .. .. .. ..$ clip.range             : num [1:2] -8.09 8.09
+  .. .. .. .. ..$ vst.flavor             : chr "v2"
+  .. .. .. .. ..$ conserve.memory        : logi FALSE
+  .. .. .. .. ..$ return.only.var.genes  : logi TRUE
+  .. .. .. .. ..$ seed.use               : num 1448145
+  .. .. .. .. ..$ verbose                : logi FALSE
+  .. ..$ RunPCA.SCT           :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "RunPCA.SCT"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-15 09:48:06"
+  .. .. .. ..@ assay.used : chr "SCT"
+  .. .. .. ..@ call.string: chr "RunPCA(SDataListTransformed[[i]], verbose = F)"
+  .. .. .. ..@ params     :List of 10
+  .. .. .. .. ..$ assay          : chr "SCT"
+  .. .. .. .. ..$ npcs           : num 50
+  .. .. .. .. ..$ rev.pca        : logi FALSE
+  .. .. .. .. ..$ weight.by.var  : logi TRUE
+  .. .. .. .. ..$ verbose        : logi FALSE
+  .. .. .. .. ..$ ndims.print    : int [1:5] 1 2 3 4 5
+  .. .. .. .. ..$ nfeatures.print: num 30
+  .. .. .. .. ..$ reduction.name : chr "pca"
+  .. .. .. .. ..$ reduction.key  : chr "PC_"
+  .. .. .. .. ..$ seed.use       : num 42
+  .. ..$ RunUMAP.SCT.pca      :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "RunUMAP.SCT.pca"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-15 09:48:17"
+  .. .. .. ..@ assay.used : chr "SCT"
+  .. .. .. ..@ call.string: chr "RunUMAP(., dims = 1:30, verbose = F)"
+  .. .. .. ..@ params     :List of 25
+  .. .. .. .. ..$ dims                : int [1:30] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. .. ..$ reduction           : chr "pca"
+  .. .. .. .. ..$ assay               : chr "SCT"
+  .. .. .. .. ..$ slot                : chr "data"
+  .. .. .. .. ..$ umap.method         : chr "uwot"
+  .. .. .. .. ..$ return.model        : logi FALSE
+  .. .. .. .. ..$ n.neighbors         : int 30
+  .. .. .. .. ..$ n.components        : int 2
+  .. .. .. .. ..$ metric              : chr "cosine"
+  .. .. .. .. ..$ learning.rate       : num 1
+  .. .. .. .. ..$ min.dist            : num 0.3
+  .. .. .. .. ..$ spread              : num 1
+  .. .. .. .. ..$ set.op.mix.ratio    : num 1
+  .. .. .. .. ..$ local.connectivity  : int 1
+  .. .. .. .. ..$ repulsion.strength  : num 1
+  .. .. .. .. ..$ negative.sample.rate: int 5
+  .. .. .. .. ..$ uwot.sgd            : logi FALSE
+  .. .. .. .. ..$ seed.use            : int 42
+  .. .. .. .. ..$ angular.rp.forest   : logi FALSE
+  .. .. .. .. ..$ densmap             : logi FALSE
+  .. .. .. .. ..$ dens.lambda         : num 2
+  .. .. .. .. ..$ dens.frac           : num 0.3
+  .. .. .. .. ..$ dens.var.shift      : num 0.1
+  .. .. .. .. ..$ verbose             : logi FALSE
+  .. .. .. .. ..$ reduction.name      : chr "umap"
+  .. ..$ FindNeighbors.SCT.pca:Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindNeighbors.SCT.pca"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-15 09:48:18"
+  .. .. .. ..@ assay.used : chr "SCT"
+  .. .. .. ..@ call.string: chr "FindNeighbors(., verbose = F)"
+  .. .. .. ..@ params     :List of 16
+  .. .. .. .. ..$ reduction      : chr "pca"
+  .. .. .. .. ..$ dims           : int [1:10] 1 2 3 4 5 6 7 8 9 10
+  .. .. .. .. ..$ assay          : chr "SCT"
+  .. .. .. .. ..$ k.param        : num 20
+  .. .. .. .. ..$ return.neighbor: logi FALSE
+  .. .. .. .. ..$ compute.SNN    : logi TRUE
+  .. .. .. .. ..$ prune.SNN      : num 0.0667
+  .. .. .. .. ..$ nn.method      : chr "annoy"
+  .. .. .. .. ..$ n.trees        : num 50
+  .. .. .. .. ..$ annoy.metric   : chr "euclidean"
+  .. .. .. .. ..$ nn.eps         : num 0
+  .. .. .. .. ..$ verbose        : logi FALSE
+  .. .. .. .. ..$ do.plot        : logi FALSE
+  .. .. .. .. ..$ graph.name     : chr [1:2] "SCT_nn" "SCT_snn"
+  .. .. .. .. ..$ l2.norm        : logi FALSE
+  .. .. .. .. ..$ cache.index    : logi FALSE
+  .. ..$ FindClusters         :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindClusters"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-15 09:48:18"
+  .. .. .. ..@ assay.used : chr "SCT"
+  .. .. .. ..@ call.string: chr "FindClusters(., verbose = F)"
+  .. .. .. ..@ params     :List of 10
+  .. .. .. .. ..$ graph.name      : chr "SCT_snn"
+  .. .. .. .. ..$ cluster.name    : chr "SCT_snn_res.0.8"
+  .. .. .. .. ..$ modularity.fxn  : num 1
+  .. .. .. .. ..$ resolution      : num 0.8
+  .. .. .. .. ..$ algorithm       : num 1
+  .. .. .. .. ..$ n.start         : num 10
+  .. .. .. .. ..$ n.iter          : num 10
+  .. .. .. .. ..$ random.seed     : num 0
+  .. .. .. .. ..$ group.singletons: logi TRUE
+  .. .. .. .. ..$ verbose         : logi FALSE
+  ..@ tools       : list()

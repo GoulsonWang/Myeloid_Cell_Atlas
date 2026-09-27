@@ -1,0 +1,338 @@
+> str(IntegratedSData_Processed)     #结果保存为str(IntegratedSData_Processed).txt
+Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  ..@ assays      :List of 2
+  .. ..$ RNA       :Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ layers    :List of 6
+  .. .. .. .. ..$ counts.1    :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:3779469] 20 21 25 35 36 43 46 53 54 64 ...
+  .. .. .. .. .. .. ..@ p       : int [1:4671] 0 907 1542 2432 2982 3427 3860 4432 5319 6307 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 17485 4670
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:3779469] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.2    :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:10906526] 5 20 27 28 34 49 59 62 63 64 ...
+  .. .. .. .. .. .. ..@ p       : int [1:5766] 0 1567 3078 4466 6553 9082 11554 14022 16104 17821 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 20522 5765
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:10906526] 4 1 3 1 1 1 1 1 2 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ data.1      :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:3779469] 20 21 25 35 36 43 46 53 54 64 ...
+  .. .. .. .. .. .. ..@ p       : int [1:4671] 0 907 1542 2432 2982 3427 3860 4432 5319 6307 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 17485 4670
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:3779469] 1.68 1.68 1.68 1.68 1.68 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ scale.data.1: num [1:2000, 1:4670] -0.2123 -0.0243 -0.2596 -0.0674 -0.1851 ...
+  .. .. .. .. ..$ data.2      :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:10906526] 5 20 27 28 34 49 59 62 63 64 ...
+  .. .. .. .. .. .. ..@ p       : int [1:5766] 0 1567 3078 4466 6553 9082 11554 14022 16104 17821 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 20522 5765
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:10906526] 2.1 1.02 1.85 1.02 1.02 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ scale.data.2: num [1:2000, 1:5765] -0.4222 -0.0359 -0.4491 -0.2298 -0.3161 ...
+  .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:10435, 1:6] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. .. .. ..$ : chr [1:6] "counts.1" "data.1" "scale.data.1" "counts.2" ...
+  .. .. .. .. .. ..$ dim     : int [1:2] 10435 6
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. .. ..$ : chr [1:6] "counts.1" "data.1" "scale.data.1" "counts.2" ...
+  .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:21085, 1:6] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:21085] "TSPAN6" "TNMD" "DPM1" "SCYL3" ...
+  .. .. .. .. .. .. .. ..$ : chr [1:6] "counts.1" "data.1" "scale.data.1" "counts.2" ...
+  .. .. .. .. .. ..$ dim     : int [1:2] 21085 6
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:21085] "TSPAN6" "TNMD" "DPM1" "SCYL3" ...
+  .. .. .. .. .. .. ..$ : chr [1:6] "counts.1" "data.1" "scale.data.1" "counts.2" ...
+  .. .. .. ..@ default   : int 2
+  .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. ..@ meta.data :'data.frame': 21085 obs. of  14 variables:
+  .. .. .. .. ..$ vf_vst_counts.1_mean                 : num [1:21085] 0.07837 0.00128 0.11734 0.01135 0.00321 ...
+  .. .. .. .. ..$ vf_vst_counts.1_variance             : num [1:21085] 0.1763 0.003 0.1798 0.0146 0.0032 ...
+  .. .. .. .. ..$ vf_vst_counts.1_variance.expected    : num [1:21085] 0.1355 0.00182 0.21427 0.01785 0.0048 ...
+  .. .. .. .. ..$ vf_vst_counts.1_variance.standardized: num [1:21085] 1.301 1.59 0.839 0.821 0.668 ...
+  .. .. .. .. ..$ vf_vst_counts.1_variable             : logi [1:21085] TRUE TRUE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. ..$ vf_vst_counts.1_rank                 : int [1:21085] 1934 834 NA NA NA NA 405 NA NA NA ...
+  .. .. .. .. ..$ var.features                         : chr [1:21085] "TSPAN6" NA NA NA ...
+  .. .. .. .. ..$ var.features.rank                    : int [1:21085] 1989 NA NA NA NA NA 795 NA NA NA ...
+  .. .. .. .. ..$ vf_vst_counts.2_mean                 : num [1:21085] 0.30668 0.00173 0.4399 0.05186 0.02827 ...
+  .. .. .. .. ..$ vf_vst_counts.2_variance             : num [1:21085] 0.78588 0.00243 0.72179 0.06653 0.05107 ...
+  .. .. .. .. ..$ vf_vst_counts.2_variance.expected    : num [1:21085] 0.57232 0.00231 0.90524 0.07935 0.043 ...
+  .. .. .. .. ..$ vf_vst_counts.2_variance.standardized: num [1:21085] 1.373 1.052 0.797 0.838 1.188 ...
+  .. .. .. .. ..$ vf_vst_counts.2_variable             : logi [1:21085] TRUE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. ..$ vf_vst_counts.2_rank                 : int [1:21085] 1989 NA NA NA NA NA 795 NA NA NA ...
+  .. .. .. ..@ misc      : list()
+  .. .. .. ..@ key       : chr "rna_"
+  .. ..$ integrated:Formal class 'Assay' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ counts       :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int(0) 
+  .. .. .. .. .. ..@ p       : int 0
+  .. .. .. .. .. ..@ Dim     : int [1:2] 0 0
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. ..@ x       : num(0) 
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:7202899] 0 1 2 3 4 5 6 7 8 9 ...
+  .. .. .. .. .. ..@ p       : int [1:10436] 0 1293 2498 3873 5251 6596 7984 9384 10650 12134 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 2000 10435
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. ..@ x       : num [1:7202899] 0.209 -0.1125 -0.0228 0.0275 -0.062 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num [1:2000, 1:10435] -0.239 -0.452 -0.289 -0.151 -0.426 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. ..@ meta.features:'data.frame':      2000 obs. of  0 variables
+  .. .. .. ..@ misc         : NULL
+  .. .. .. ..@ key          : chr "integrated_"
+  ..@ meta.data   :'data.frame':        10435 obs. of  7 variables:
+  .. ..$ orig.ident            : num [1:10435] 52 52 52 52 52 52 52 52 52 52 ...
+  .. ..$ nCount_RNA            : num [1:10435] 2289 1681 2328 1632 1498 ...
+  .. ..$ nFeature_RNA          : int [1:10435] 911 636 893 552 447 436 572 890 992 406 ...
+  .. ..$ percent.MT            : num [1:10435] 8.39 8.09 10.35 5.88 38.58 ...
+  .. ..$ RNA_snn_res.0.2       : chr [1:10435] "2" "5" "0" "0" ...
+  .. ..$ seurat_clusters       : Factor w/ 14 levels "0","1","2","3",..: 3 8 4 4 6 7 4 1 10 5 ...
+  .. ..$ integrated_snn_res.0.2: Factor w/ 14 levels "0","1","2","3",..: 3 8 4 4 6 7 4 1 10 5 ...
+  ..@ active.assay: chr "integrated"
+  ..@ active.ident: Factor w/ 14 levels "0","1","2","3",..: 3 8 4 4 6 7 4 1 10 5 ...
+  .. ..- attr(*, "names")= chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  ..@ graphs      :List of 2
+  .. ..$ integrated_nn :Formal class 'Graph' [package "SeuratObject"] with 7 slots
+  .. .. .. ..@ assay.used: chr "integrated"
+  .. .. .. ..@ i         : int [1:208700] 0 334 476 763 1060 1098 1172 2690 2770 3793 ...
+  .. .. .. ..@ p         : int [1:10436] 0 19 30 53 73 95 133 144 161 193 ...
+  .. .. .. ..@ Dim       : int [1:2] 10435 10435
+  .. .. .. ..@ Dimnames  :List of 2
+  .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. ..@ x         : num [1:208700] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. ..@ factors   : list()
+  .. ..$ integrated_snn:Formal class 'Graph' [package "SeuratObject"] with 7 slots
+  .. .. .. ..@ assay.used: chr "integrated"
+  .. .. .. ..@ i         : int [1:694945] 0 157 334 455 461 476 763 786 816 1060 ...
+  .. .. .. ..@ p         : int [1:10436] 0 79 132 224 315 375 451 516 569 630 ...
+  .. .. .. ..@ Dim       : int [1:2] 10435 10435
+  .. .. .. ..@ Dimnames  :List of 2
+  .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. ..@ x         : num [1:694945] 1 0.1429 0.4286 0.1111 0.0811 ...
+  .. .. .. ..@ factors   : list()
+  ..@ neighbors   : list()
+  ..@ reductions  :List of 2
+  .. ..$ pca :Formal class 'DimReduc' [package "SeuratObject"] with 9 slots
+  .. .. .. ..@ cell.embeddings           : num [1:10435, 1:50] -7.823 -8.83 -0.101 0.843 4.959 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. ..$ : chr [1:50] "PC_1" "PC_2" "PC_3" "PC_4" ...
+  .. .. .. ..@ feature.loadings          : num [1:2000, 1:50] -0.004699 -0.001346 -0.000864 -0.000779 0.065823 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. .. .. ..$ : chr [1:50] "PC_1" "PC_2" "PC_3" "PC_4" ...
+  .. .. .. ..@ feature.loadings.projected: num[0 , 0 ] 
+  .. .. .. ..@ assay.used                : chr "integrated"
+  .. .. .. ..@ global                    : logi FALSE
+  .. .. .. ..@ stdev                     : num [1:50] 9.98 8.7 7.41 6.74 5 ...
+  .. .. .. ..@ jackstraw                 :Formal class 'JackStrawData' [package "SeuratObject"] with 4 slots
+  .. .. .. .. .. ..@ empirical.p.values     : num[0 , 0 ] 
+  .. .. .. .. .. ..@ fake.reduction.scores  : num[0 , 0 ] 
+  .. .. .. .. .. ..@ empirical.p.values.full: num[0 , 0 ] 
+  .. .. .. .. .. ..@ overall.p.values       : num[0 , 0 ] 
+  .. .. .. ..@ misc                      :List of 1
+  .. .. .. .. ..$ total.variance: num 1505
+  .. .. .. ..@ key                       : chr "PC_"
+  .. ..$ umap:Formal class 'DimReduc' [package "SeuratObject"] with 9 slots
+  .. .. .. ..@ cell.embeddings           : num [1:10435, 1:2] 1.67 -5.77 -12.16 -12.05 6.12 ...
+  .. .. .. .. ..- attr(*, "scaled:center")= num [1:2] -0.267 0.599
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:10435] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. ..$ : chr [1:2] "umap_1" "umap_2"
+  .. .. .. ..@ feature.loadings          : num[0 , 0 ] 
+  .. .. .. ..@ feature.loadings.projected: num[0 , 0 ] 
+  .. .. .. ..@ assay.used                : chr "integrated"
+  .. .. .. ..@ global                    : logi TRUE
+  .. .. .. ..@ stdev                     : num(0) 
+  .. .. .. ..@ jackstraw                 :Formal class 'JackStrawData' [package "SeuratObject"] with 4 slots
+  .. .. .. .. .. ..@ empirical.p.values     : num[0 , 0 ] 
+  .. .. .. .. .. ..@ fake.reduction.scores  : num[0 , 0 ] 
+  .. .. .. .. .. ..@ empirical.p.values.full: num[0 , 0 ] 
+  .. .. .. .. .. ..@ overall.p.values       : num[0 , 0 ] 
+  .. .. .. ..@ misc                      : list()
+  .. .. .. ..@ key                       : chr "umap_"
+  ..@ images      : list()
+  ..@ project.name: chr "SeuratProject"
+  ..@ misc        : list()
+  ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. ..$ : int [1:3] 5 0 2
+  ..@ commands    :List of 7
+  .. ..$ FindIntegrationAnchors      :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindIntegrationAnchors"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:04:39"
+  .. .. .. ..@ assay.used : chr [1:2] "RNA" "RNA"
+  .. .. .. ..@ call.string: chr [1:2] "FindIntegrationAnchors(SDataListTransformed, reduction = \"rpca\", " "    verbose = F)"
+  .. .. .. ..@ params     :List of 15
+  .. .. .. .. ..$ assay               : chr [1:2] "RNA" "RNA"
+  .. .. .. .. ..$ anchor.features     : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. .. ..$ scale               : logi TRUE
+  .. .. .. .. ..$ normalization.method: chr "LogNormalize"
+  .. .. .. .. ..$ reduction           : chr "pca"
+  .. .. .. .. ..$ l2.norm             : logi TRUE
+  .. .. .. .. ..$ dims                : int [1:30] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. .. ..$ k.anchor            : num 5
+  .. .. .. .. ..$ k.filter            : logi NA
+  .. .. .. .. ..$ k.score             : num 30
+  .. .. .. .. ..$ max.features        : num 200
+  .. .. .. .. ..$ nn.method           : chr "annoy"
+  .. .. .. .. ..$ n.trees             : num 50
+  .. .. .. .. ..$ eps                 : num 0
+  .. .. .. .. ..$ verbose             : logi FALSE
+  .. ..$ withCallingHandlers         :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "withCallingHandlers"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:05:10"
+  .. .. .. ..@ assay.used : NULL
+  .. .. .. ..@ call.string: chr [1:2] "withCallingHandlers(expr, warning = function(w) if (inherits(w, " "    classes)) tryInvokeRestart(\"muffleWarning\"))"
+  .. .. .. ..@ params     :List of 9
+  .. .. .. .. ..$ new.assay.name      : chr "integrated"
+  .. .. .. .. ..$ normalization.method: chr "LogNormalize"
+  .. .. .. .. ..$ features            : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. .. ..$ dims                : int [1:30] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. .. ..$ k.weight            : num 100
+  .. .. .. .. ..$ sd.weight           : num 1
+  .. .. .. .. ..$ preserve.order      : logi FALSE
+  .. .. .. .. ..$ eps                 : num 0
+  .. .. .. .. ..$ verbose             : logi FALSE
+  .. ..$ ScaleData.integrated        :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "ScaleData.integrated"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:30:38"
+  .. .. .. ..@ assay.used : chr "integrated"
+  .. .. .. ..@ call.string: chr "ScaleData(IntegratedSData, verbose = F)"
+  .. .. .. ..@ params     :List of 10
+  .. .. .. .. ..$ features          : chr [1:2000] "IGKC" "IGHA1" "IGLC2" "JCHAIN" ...
+  .. .. .. .. ..$ assay             : chr "integrated"
+  .. .. .. .. ..$ model.use         : chr "linear"
+  .. .. .. .. ..$ use.umi           : logi FALSE
+  .. .. .. .. ..$ do.scale          : logi TRUE
+  .. .. .. .. ..$ do.center         : logi TRUE
+  .. .. .. .. ..$ scale.max         : num 10
+  .. .. .. .. ..$ block.size        : num 1000
+  .. .. .. .. ..$ min.cells.to.block: num 3000
+  .. .. .. .. ..$ verbose           : logi FALSE
+  .. ..$ RunPCA.integrated           :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "RunPCA.integrated"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:31:00"
+  .. .. .. ..@ assay.used : chr "integrated"
+  .. .. .. ..@ call.string: chr "RunPCA(., verbose = F)"
+  .. .. .. ..@ params     :List of 10
+  .. .. .. .. ..$ assay          : chr "integrated"
+  .. .. .. .. ..$ npcs           : num 50
+  .. .. .. .. ..$ rev.pca        : logi FALSE
+  .. .. .. .. ..$ weight.by.var  : logi TRUE
+  .. .. .. .. ..$ verbose        : logi FALSE
+  .. .. .. .. ..$ ndims.print    : int [1:5] 1 2 3 4 5
+  .. .. .. .. ..$ nfeatures.print: num 30
+  .. .. .. .. ..$ reduction.name : chr "pca"
+  .. .. .. .. ..$ reduction.key  : chr "PC_"
+  .. .. .. .. ..$ seed.use       : num 42
+  .. ..$ FindNeighbors.integrated.pca:Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindNeighbors.integrated.pca"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:31:04"
+  .. .. .. ..@ assay.used : chr "integrated"
+  .. .. .. ..@ call.string: chr "FindNeighbors(., verbose = F)"
+  .. .. .. ..@ params     :List of 16
+  .. .. .. .. ..$ reduction      : chr "pca"
+  .. .. .. .. ..$ dims           : int [1:10] 1 2 3 4 5 6 7 8 9 10
+  .. .. .. .. ..$ assay          : chr "integrated"
+  .. .. .. .. ..$ k.param        : num 20
+  .. .. .. .. ..$ return.neighbor: logi FALSE
+  .. .. .. .. ..$ compute.SNN    : logi TRUE
+  .. .. .. .. ..$ prune.SNN      : num 0.0667
+  .. .. .. .. ..$ nn.method      : chr "annoy"
+  .. .. .. .. ..$ n.trees        : num 50
+  .. .. .. .. ..$ annoy.metric   : chr "euclidean"
+  .. .. .. .. ..$ nn.eps         : num 0
+  .. .. .. .. ..$ verbose        : logi FALSE
+  .. .. .. .. ..$ do.plot        : logi FALSE
+  .. .. .. .. ..$ graph.name     : chr [1:2] "integrated_nn" "integrated_snn"
+  .. .. .. .. ..$ l2.norm        : logi FALSE
+  .. .. .. .. ..$ cache.index    : logi FALSE
+  .. ..$ FindClusters                :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindClusters"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:31:05"
+  .. .. .. ..@ assay.used : chr "integrated"
+  .. .. .. ..@ call.string: chr "FindClusters(., resolution = 0.2, verbose = F)"
+  .. .. .. ..@ params     :List of 10
+  .. .. .. .. ..$ graph.name      : chr "integrated_snn"
+  .. .. .. .. ..$ cluster.name    : chr "integrated_snn_res.0.2"
+  .. .. .. .. ..$ modularity.fxn  : num 1
+  .. .. .. .. ..$ resolution      : num 0.2
+  .. .. .. .. ..$ algorithm       : num 1
+  .. .. .. .. ..$ n.start         : num 10
+  .. .. .. .. ..$ n.iter          : num 10
+  .. .. .. .. ..$ random.seed     : num 0
+  .. .. .. .. ..$ group.singletons: logi TRUE
+  .. .. .. .. ..$ verbose         : logi FALSE
+  .. ..$ RunUMAP.integrated.pca      :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "RunUMAP.integrated.pca"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-25 15:31:30"
+  .. .. .. ..@ assay.used : chr "integrated"
+  .. .. .. ..@ call.string: chr "RunUMAP(., dims = 1:30, verbose = F)"
+  .. .. .. ..@ params     :List of 25
+  .. .. .. .. ..$ dims                : int [1:30] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. .. ..$ reduction           : chr "pca"
+  .. .. .. .. ..$ assay               : chr "integrated"
+  .. .. .. .. ..$ slot                : chr "data"
+  .. .. .. .. ..$ umap.method         : chr "uwot"
+  .. .. .. .. ..$ return.model        : logi FALSE
+  .. .. .. .. ..$ n.neighbors         : int 30
+  .. .. .. .. ..$ n.components        : int 2
+  .. .. .. .. ..$ metric              : chr "cosine"
+  .. .. .. .. ..$ learning.rate       : num 1
+  .. .. .. .. ..$ min.dist            : num 0.3
+  .. .. .. .. ..$ spread              : num 1
+  .. .. .. .. ..$ set.op.mix.ratio    : num 1
+  .. .. .. .. ..$ local.connectivity  : int 1
+  .. .. .. .. ..$ repulsion.strength  : num 1
+  .. .. .. .. ..$ negative.sample.rate: int 5
+  .. .. .. .. ..$ uwot.sgd            : logi FALSE
+  .. .. .. .. ..$ seed.use            : int 42
+  .. .. .. .. ..$ angular.rp.forest   : logi FALSE
+  .. .. .. .. ..$ densmap             : logi FALSE
+  .. .. .. .. ..$ dens.lambda         : num 2
+  .. .. .. .. ..$ dens.frac           : num 0.3
+  .. .. .. .. ..$ dens.var.shift      : num 0.1
+  .. .. .. .. ..$ verbose             : logi FALSE
+  .. .. .. .. ..$ reduction.name      : chr "umap"
+  ..@ tools       :List of 1
+  .. ..$ Integration:Formal class 'IntegrationData' [package "Seurat"] with 7 slots
+  .. .. .. ..@ neighbors         : NULL
+  .. .. .. ..@ weights           : NULL
+  .. .. .. ..@ integration.matrix: NULL
+  .. .. .. ..@ anchors           :'data.frame': 2464 obs. of  5 variables:
+  .. .. .. .. ..$ cell1   : num [1:2464] 10 10 10 10 16 18 18 19 30 32 ...
+  .. .. .. .. ..$ cell2   : num [1:2464] 1417 1966 1838 1961 4909 ...
+  .. .. .. .. ..$ score   : num [1:2464] 1 1 1 1 0.412 ...
+  .. .. .. .. ..$ dataset1: int [1:2464] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. ..$ dataset2: int [1:2464] 2 2 2 2 2 2 2 2 2 2 ...
+  .. .. .. ..@ offsets           : NULL
+  .. .. .. ..@ objects.ncell     : NULL
+  .. .. .. ..@ sample.tree       : num [1, 1:2] -2 -1

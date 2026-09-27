@@ -1,0 +1,85 @@
+> fitted(model7)
+Re-fitting to get fitted values
+, , Subtype = DC_CPVL
+
+         Response
+PreOrPost  Partial   Stable
+     Post 13.36893 37.63107
+     Pre  13.63107 38.36893
+
+, , Subtype = DC_HLA
+
+         Response
+PreOrPost  Partial   Stable
+     Post 26.56424 116.4358
+     Pre  80.43576 352.5642
+
+, , Subtype = DC_LAMP3
+
+         Response
+PreOrPost   Partial  Stable
+     Post  5.325301 11.6747
+     Pre  20.674699 45.3253
+
+, , Subtype = Macro_APOE
+
+         Response
+PreOrPost   Partial   Stable
+     Post  39.94524 209.0548
+     Pre  127.05476 664.9452
+
+, , Subtype = Macro_CCL
+
+         Response
+PreOrPost  Partial   Stable
+     Post 17.17581 124.8242
+     Pre  68.82419 500.1758
+
+, , Subtype = Macro_FOSB
+
+         Response
+PreOrPost Partial Stable
+     Post   21.84 146.16
+     Pre    82.16 549.84
+
+, , Subtype = Macro_MARCO
+
+         Response
+PreOrPost Partial Stable
+     Post     0.5    1.5
+     Pre      1.5    4.5
+
+, , Subtype = Macro_MS4A6A
+
+         Response
+PreOrPost  Partial   Stable
+     Post  27.2262 190.7738
+     Pre  115.7738 811.2262
+
+, , Subtype = Mast
+
+         Response
+PreOrPost  Partial    Stable
+     Post 17.77597  55.22403
+     Pre  57.22403 177.77597
+
+, , Subtype = Mono_FCN1
+
+         Response
+PreOrPost  Partial    Stable
+     Post 12.00307  78.99693
+     Pre  73.99693 487.00307
+
+, , Subtype = Mono_TIMP1
+
+         Response
+PreOrPost  Partial   Stable
+     Post 3.851852 12.14815
+     Pre  9.148148 28.85185
+
+, , Subtype = Neutro_FCGR3B
+
+         Response
+PreOrPost Partial Stable
+     Post     0.5   12.5
+     Pre      3.5   87.5

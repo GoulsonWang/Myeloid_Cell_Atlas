@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+title: "Myeloid Cell Atlas across Human Cancers"
+abstract: >-
+  Analysis code for a pan-cancer myeloid / macrophage single-cell atlas
+  spanning ESCC, PC, AML, NSCLC and TNBC cohorts, including subclustering,
+  cell-cell communication, trajectory, co-expression networks, NMF
+  meta-programs and signature-based prediction.
+type: software
+authors:
+  - family-names: Wang
+    given-names: Guosheng
+    alias: GoulsonWang
+    website: "https://github.com/GoulsonWang"
+repository-code: "https://github.com/GoulsonWang/Myeloid_Cell_Atlas"
+license: MIT
+# --- The fields below will be completed once the paper is published ---
+# preferred-citation:
+#   type: article
+#   title: "<PAPER TITLE>"
+#   authors:
+#     - family-names: Wang
+#       given-names: Guosheng
+#   journal: "<JOURNAL>"
+#   year: <YEAR>
+#   doi: "10.xxxx/xxxxx"

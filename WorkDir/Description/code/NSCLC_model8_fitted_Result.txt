@@ -1,0 +1,86 @@
+  model8 <- update(model1, .~. + 1*2 + 1*3 + 2*3)
+> fitted(model8)
+Re-fitting to get fitted values
+, , Subtype = DC_CPVL
+
+         Response
+PreOrPost        MPR     NMPR        pCR
+     Post 24.6911667 74.80941 22.4994765
+     Pre   0.3088333 15.19059  0.5005235
+
+, , Subtype = DC_HLA
+
+         Response
+PreOrPost       MPR      NMPR        pCR
+     Post 132.93392 738.81142 52.2546701
+     Pre    1.06608  96.18858  0.7453299
+
+, , Subtype = DC_LAMP3
+
+         Response
+PreOrPost        MPR     NMPR       pCR
+     Post 35.2759497 69.00606 7.7182409
+     Pre   0.7240503 22.99394 0.2817591
+
+, , Subtype = Macro_APOE
+
+         Response
+PreOrPost         MPR      NMPR        pCR
+     Post 360.0309943 3451.2029 257.766095
+     Pre    0.9690057  150.7971   1.233905
+
+, , Subtype = Macro_CCL
+
+         Response
+PreOrPost         MPR      NMPR        pCR
+     Post 152.1065365 1076.3587 44.5347381
+     Pre    0.8934635  102.6413  0.4652619
+
+, , Subtype = Macro_FOSB
+
+         Response
+PreOrPost         MPR      NMPR        pCR
+     Post 186.1844856 1966.1866 47.6289531
+     Pre    0.8155144  139.8134  0.3710469
+
+, , Subtype = Macro_MARCO
+
+         Response
+PreOrPost         MPR        NMPR          pCR
+     Post 453.8805517 1829.184944 139.93450128
+     Pre    0.1194483    7.815056   0.06549872
+
+, , Subtype = Macro_MS4A6A
+
+         Response
+PreOrPost        MPR      NMPR        pCR
+     Post 313.500519 2976.8491 158.650374
+     Pre    1.499481  231.1509   1.349626
+
+, , Subtype = Mast
+
+         Response
+PreOrPost        MPR     NMPR       pCR
+     Post 151.824378 593.4761 88.700245
+     Pre    3.175622 201.5239  3.299755
+
+, , Subtype = Mono_FCN1
+
+         Response
+PreOrPost         MPR       NMPR        pCR
+     Post 207.0273512 1084.29852 158.674121
+     Pre    0.9726488   82.70148   1.325879
+
+, , Subtype = Mono_TIMP1
+
+         Response
+PreOrPost         MPR      NMPR        pCR
+     Post 14.91598192 326.17329 8.91073035
+     Pre   0.08401808  29.82671 0.08926965
+
+, , Subtype = Neutro_FCGR3B
+
+         Response
+PreOrPost       MPR      NMPR        pCR
+     Post 521.62798 4387.6443 485.727719
+     Pre    1.37202  187.3557   2.272281

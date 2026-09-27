@@ -1,0 +1,1159 @@
+[1] "输出str(SData_Integrated)"
+Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  ..@ assays      :List of 3
+  .. ..$ RNA       :Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ layers    :List of 15
+  .. .. .. .. ..$ counts.1 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:9121429] 5 8 13 14 15 16 17 19 22 23 ...
+  .. .. .. .. .. .. ..@ p       : int [1:4742] 0 7202 14558 20904 27536 30773 33848 36879 39773 42739 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 4741
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:9121429] 1 2 1 5 1 16 1 29 1 3 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.2 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:5415805] 7 15 16 19 22 23 26 38 41 44 ...
+  .. .. .. .. .. .. ..@ p       : int [1:5346] 0 5658 8953 12110 14726 17398 19970 22329 24466 26560 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 5345
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:5415805] 3 1 6 2 1 2 2 1 2 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.3 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:15873043] 7 16 19 22 26 51 58 63 66 67 ...
+  .. .. .. .. .. .. ..@ p       : int [1:9260] 0 5380 9276 12885 16739 20204 23723 27143 30497 33894 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 9259
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:15873043] 2 3 5 1 1 2 1 1 6 5 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.4 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:13091797] 13 14 16 19 23 26 40 49 51 57 ...
+  .. .. .. .. .. .. ..@ p       : int [1:8399] 0 5529 10163 14692 18439 22079 25994 29801 33256 36944 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 8398
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:13091797] 1 3 4 4 4 1 1 1 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.5 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:7053408] 3 14 16 19 26 41 44 51 57 63 ...
+  .. .. .. .. .. .. ..@ p       : int [1:4650] 0 4014 7831 11457 13744 15888 17960 20117 22220 24540 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 4649
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:7053408] 1 1 2 1 3 2 2 1 3 2 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.6 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:26619109] 6 11 13 16 19 22 23 24 26 33 ...
+  .. .. .. .. .. .. ..@ p       : int [1:9132] 0 4894 9564 12943 15901 18558 20924 23265 25521 27665 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 9131
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:26619109] 2 1 3 5 4 1 1 1 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.7 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:7090330] 1 13 16 23 41 52 57 63 65 66 ...
+  .. .. .. .. .. .. ..@ p       : int [1:3114] 0 4193 8019 11806 14895 17984 21183 24453 27383 30184 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 3113
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:7090330] 1 1 1 1 2 2 1 1 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.8 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:9783046] 7 14 15 16 19 23 48 52 63 65 ...
+  .. .. .. .. .. .. ..@ p       : int [1:5826] 0 4651 9493 14151 18772 23326 27255 31171 35022 38953 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 5825
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:9783046] 1 3 1 2 1 1 1 1 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.9 :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:9549520] 7 13 16 17 19 22 23 26 27 41 ...
+  .. .. .. .. .. .. ..@ p       : int [1:4850] 0 4932 9495 13800 17923 21757 25775 29481 33231 36957 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 4849
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:9549520] 2 1 4 1 1 1 5 5 1 2 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.10:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:11438753] 16 17 19 22 23 26 35 41 48 49 ...
+  .. .. .. .. .. .. ..@ p       : int [1:6644] 0 5132 10443 15512 20359 24856 28829 32891 37118 41137 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 6643
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:11438753] 3 1 4 1 2 2 1 1 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.11:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:8769593] 1 13 14 16 17 19 23 26 35 36 ...
+  .. .. .. .. .. .. ..@ p       : int [1:3760] 0 6014 11716 16868 21751 26020 30214 34236 37334 40120 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 3759
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:8769593] 1 2 1 6 2 4 2 3 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.12:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:9182401] 7 8 13 16 19 22 23 26 41 48 ...
+  .. .. .. .. .. .. ..@ p       : int [1:6234] 0 6203 12249 17009 21863 26576 30550 34629 38925 42680 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 6233
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:9182401] 2 1 1 4 3 1 2 2 1 2 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.13:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:14051481] 7 13 14 16 19 22 23 26 44 48 ...
+  .. .. .. .. .. .. ..@ p       : int [1:6754] 0 6414 12543 17859 22971 28190 32771 37755 42687 47526 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 6753
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:14051481] 4 1 2 6 2 1 2 10 3 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.14:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:7241173] 13 14 16 19 23 26 41 51 57 63 ...
+  .. .. .. .. .. .. ..@ p       : int [1:5547] 0 6423 12500 18339 23159 27851 32416 36743 41010 45177 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 5546
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:7241173] 4 1 2 2 2 3 2 4 1 1 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ counts.15:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:19566329] 3 7 15 16 19 26 40 41 44 58 ...
+  .. .. .. .. .. .. ..@ p       : int [1:8087] 0 4778 9300 13459 17388 21347 25383 29374 32574 35812 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 24292 8086
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:19566329] 2 1 1 3 1 2 3 1 2 2 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:92330, 1:15] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. .. .. .. .. ..$ : chr [1:15] "counts.1" "counts.2" "counts.3" "counts.4" ...
+  .. .. .. .. .. ..$ dim     : int [1:2] 92330 15
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. .. .. .. ..$ : chr [1:15] "counts.1" "counts.2" "counts.3" "counts.4" ...
+  .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:24292, 1:15] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:24292] "A1BG" "A1BG-AS1" "A1CF" "A2M" ...
+  .. .. .. .. .. .. .. ..$ : chr [1:15] "counts.1" "counts.2" "counts.3" "counts.4" ...
+  .. .. .. .. .. ..$ dim     : int [1:2] 24292 15
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:24292] "A1BG" "A1BG-AS1" "A1CF" "A2M" ...
+  .. .. .. .. .. .. ..$ : chr [1:15] "counts.1" "counts.2" "counts.3" "counts.4" ...
+  .. .. .. ..@ default   : int 15
+  .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. ..@ meta.data :'data.frame':	24292 obs. of  0 variables
+  .. .. .. ..@ misc      : list()
+  .. .. .. ..@ key       : chr "rna_"
+  .. ..$ SCT       :Formal class 'SCTAssay' [package "Seurat"] with 9 slots
+  .. .. .. ..@ SCTModel.list:List of 15
+  .. .. .. .. ..$ counts   :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20951 obs. of  12 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate       : num [1:20951] 0.00127 0.02194 0.20607 0.0097 0.04197 ...
+  .. .. .. .. .. .. .. ..$ gmean                : num [1:20951] 0.000878 0.016919 0.673883 0.007154 0.063657 ...
+  .. .. .. .. .. .. .. ..$ variance             : num [1:20951] 1.26e-03 3.64e-02 1.08e+02 1.32e-02 1.97e+01 ...
+  .. .. .. .. .. .. .. ..$ residual_mean        : num [1:20951] -1.39e-06 -4.67e-03 3.46e-01 -3.60e-04 2.16e-01 ...
+  .. .. .. .. .. .. .. ..$ residual_variance    : num [1:20951] 0.0315 0.3636 5.9225 0.2477 12.5489 ...
+  .. .. .. .. .. .. .. ..$ theta                : num [1:20951] Inf 0.146 0.8787 0.0629 0.3978 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)          : num [1:20951] -15.61 -12.59 -8.58 -13.47 -11.22 ...
+  .. .. .. .. .. .. .. ..$ log_umi              : num [1:20951] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. .. ..$ genes_log_gmean_step1: logi [1:20951] FALSE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. .. .. .. ..$ step1_theta          : num [1:20951] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_(Intercept)    : num [1:20951] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_log_umi        : num [1:20951] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	4741 obs. of  3 variables:
+  .. .. .. .. .. .. .. ..$ umi        : num [1:4741] 45924 41596 31883 31458 9912 ...
+  .. .. .. .. .. .. .. ..$ log_umi    : num [1:4741] 4.66 4.62 4.5 4.5 4 ...
+  .. .. .. .. .. .. .. ..$ cells_step1: logi [1:4741] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -68.9 68.9
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -12.6 12.6
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 4741
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -68.9 68.9
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -12.6 12.6
+  .. .. .. .. .. .. ..@ median_umi        : num 2162
+  .. .. .. .. ..$ counts.1 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	19143 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:19143] 0.0109 0.0116 0.0073 0.0529 0.0144 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:19143] 0.0077 0.01955 0.00545 0.04084 0.01034 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:19143] 0.0119 1.901 0.01 0.0821 0.0164 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:19143] 0.00227 0.0158 0.00273 -0.00773 -0.00508 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:19143] 0.274 3.36 0.236 0.904 0.326 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:19143] 0.065 0.1538 0.0461 0.3218 0.0823 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:19143] -12.2 -11.1 -12.5 -10.5 -11.8 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:19143] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	5345 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:5345] 29105 9998 8205 7389 7088 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:5345] 4.46 4 3.91 3.87 3.85 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -73.1 73.1
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -13.3 13.3
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -73.1 73.1
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -13.3 13.3
+  .. .. .. .. .. .. ..@ median_umi        : num 1724
+  .. .. .. .. ..$ counts.2 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	22709 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:22709] 0.00194 0.01134 0.04083 0.00486 0.00551 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:22709] 0.00135 0.00833 0.07137 0.00355 0.00436 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:22709] 0.00194 0.01443 8.58843 0.00613 0.01032 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:22709] -7.81e-07 1.12e-02 2.06e-01 -1.24e-03 -5.45e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:22709] 0.0485 0.3375 13.135 0.1172 0.1113 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:22709] Inf 0.0701 0.4825 0.0263 0.0339 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:22709] -14.9 -13.1 -10.8 -13.9 -13.7 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:22709] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	9259 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:9259] 26100 13020 12489 12107 11581 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:9259] 4.42 4.11 4.1 4.08 4.06 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -96.2 96.2
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -17.6 17.6
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -96.2 96.2
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -17.6 17.6
+  .. .. .. .. .. .. ..@ median_umi        : num 2292
+  .. .. .. .. ..$ counts.3 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20868 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:20868] 0.000595 0.021434 0.132889 0.008097 0.011074 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:20868] 0.000413 0.015458 0.323424 0.005677 0.010501 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:20868] 5.95e-04 2.45e-02 4.73e+01 8.39e-03 7.52e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:20868] -6.48e-07 -6.00e-03 1.71e-01 -4.39e-03 5.91e-05 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:20868] 0.0149 0.3426 5.9493 0.1538 0.5602 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:20868] Inf 0.089 0.866 0.0293 0.0558 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:20868] -15.87 -12.15 -9.05 -13.14 -12.53 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:20868] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	8398 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:8398] 26446 19704 16389 13880 12329 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:8398] 4.42 4.29 4.21 4.14 4.09 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -91.6 91.6
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -16.7 16.7
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -91.6 91.6
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -16.7 16.7
+  .. .. .. .. .. .. ..@ median_umi        : num 2330
+  .. .. .. .. ..$ counts.4 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	19956 obs. of  12 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate       : num [1:19956] 0.01377 0.14562 0.00667 0.00559 0.0897 ...
+  .. .. .. .. .. .. .. ..$ gmean                : num [1:19956] 0.01018 0.34804 0.0049 0.00491 0.07585 ...
+  .. .. .. .. .. .. .. ..$ variance             : num [1:19956] 0.01848 28.19447 0.00855 0.01886 0.17824 ...
+  .. .. .. .. .. .. .. ..$ residual_mean        : num [1:19956] -0.00406 -0.00733 -0.00476 0.00343 -0.01218 ...
+  .. .. .. .. .. .. .. ..$ residual_variance    : num [1:19956] 0.251 2.464 0.124 0.355 0.99 ...
+  .. .. .. .. .. .. .. ..$ theta                : num [1:19956] 0.053 0.918 0.0253 0.0254 0.4456 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)          : num [1:19956] -12.6 -8.9 -13.3 -13.3 -10.5 ...
+  .. .. .. .. .. .. .. ..$ log_umi              : num [1:19956] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. .. ..$ genes_log_gmean_step1: logi [1:19956] FALSE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. .. .. .. ..$ step1_theta          : num [1:19956] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_(Intercept)    : num [1:19956] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_log_umi        : num [1:19956] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	4649 obs. of  3 variables:
+  .. .. .. .. .. .. .. ..$ umi        : num [1:4649] 14600 12865 11593 6045 5855 ...
+  .. .. .. .. .. .. .. ..$ log_umi    : num [1:4649] 4.16 4.11 4.06 3.78 3.77 ...
+  .. .. .. .. .. .. .. ..$ cells_step1: logi [1:4649] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -68.2 68.2
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -12.4 12.4
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 4649
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -68.2 68.2
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -12.4 12.4
+  .. .. .. .. .. .. ..@ median_umi        : num 1919
+  .. .. .. .. ..$ counts.5 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	22341 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:22341] 0.000548 0.005804 0.000876 0.140182 0.010514 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:22341] 0.00038 0.004165 0.000607 0.252068 0.007583 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:22341] 5.47e-04 6.75e-03 8.75e-04 4.09e+01 1.24e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:22341] -1.67e-07 -8.02e-04 -2.67e-07 1.40 4.65e-04 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:22341] 0.0137 0.1697 0.0219 77.4619 0.3079 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:22341] Inf 0.0248 Inf 2.0463 0.0658 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:22341] -16.7 -14.2 -16.2 -10.2 -13.7 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:22341] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	9131 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:9131] 16835 16265 9810 7884 7331 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:9131] 4.23 4.21 3.99 3.9 3.87 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -95.6 95.6
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -17.4 17.4
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -95.6 95.6
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -17.4 17.4
+  .. .. .. .. .. .. ..@ median_umi        : num 9431
+  .. .. .. .. ..$ counts.6 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	19800 obs. of  12 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate       : num [1:19800] 0.01478 0.05461 0.0045 0.00193 0.08095 ...
+  .. .. .. .. .. .. .. ..$ gmean                : num [1:19800] 0.01069 0.09803 0.00325 0.00134 0.07096 ...
+  .. .. .. .. .. .. .. ..$ variance             : num [1:19800] 0.01743 8.20005 0.00544 0.00192 0.23657 ...
+  .. .. .. .. .. .. .. ..$ residual_mean        : num [1:19800] 1.03e-02 3.89e-01 -2.75e-03 -3.28e-06 -3.15e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_variance    : num [1:19800] 0.378 14.49 0.113 0.048 0.697 ...
+  .. .. .. .. .. .. .. ..$ theta                : num [1:19800] 0.0646 0.6554 0.0145 Inf 0.4375 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)          : num [1:19800] -13.2 -11 -14.4 -15.4 -11.3 ...
+  .. .. .. .. .. .. .. ..$ log_umi              : num [1:19800] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. .. ..$ genes_log_gmean_step1: logi [1:19800] FALSE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. .. .. .. ..$ step1_theta          : num [1:19800] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_(Intercept)    : num [1:19800] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_log_umi        : num [1:19800] NA NA NA NA NA NA NA NA NA NA ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	3113 obs. of  3 variables:
+  .. .. .. .. .. .. .. ..$ umi        : num [1:3113] 17033 13324 13555 10142 9386 ...
+  .. .. .. .. .. .. .. ..$ log_umi    : num [1:3113] 4.23 4.12 4.13 4.01 3.97 ...
+  .. .. .. .. .. .. .. ..$ cells_step1: logi [1:3113] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -55.8 55.8
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -10.2 10.2
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 3113
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -55.8 55.8
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -10.2 10.2
+  .. .. .. .. .. .. ..@ median_umi        : num 3214
+  .. .. .. .. ..$ counts.7 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20826 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:20826] 0.015966 0.000858 0.118798 0.006352 0.025751 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:20826] 0.01148 0.000595 0.231407 0.004482 0.020819 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:20826] 1.83e-02 8.58e-04 1.87e+01 6.83e-03 5.31e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:20826] 1.67e-03 -1.22e-06 3.59e-01 -4.48e-04 -1.08e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:20826] 0.3596 0.0214 14.0211 0.1614 0.544 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:20826] 0.0819 Inf 0.6741 0.0394 0.1316 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:20826] -12.55 -15.56 -9.42 -13.5 -11.9 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:20826] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	5825 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:5825] 18593 17996 16897 15411 15828 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:5825] 4.27 4.26 4.23 4.19 4.2 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -76.3 76.3
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -13.9 13.9
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -76.3 76.3
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -13.9 13.9
+  .. .. .. .. .. .. ..@ median_umi        : num 2555
+  .. .. .. .. ..$ counts.8 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20456 obs. of  12 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate       : num [1:20456] 0.00124 0.02537 0.10167 0.00639 0.01361 ...
+  .. .. .. .. .. .. .. ..$ gmean                : num [1:20456] 0.000858 0.019161 0.18401 0.004693 0.015022 ...
+  .. .. .. .. .. .. .. ..$ variance             : num [1:20456] 0.00124 0.03547 9.03039 0.0082 0.39444 ...
+  .. .. .. .. .. .. .. ..$ residual_mean        : num [1:20456] -1.93e-06 1.06e-02 1.02e-01 -7.48e-04 3.66e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_variance    : num [1:20456] 0.0308 0.5831 4.3957 0.1644 1.3218 ...
+  .. .. .. .. .. .. .. ..$ theta                : num [1:20456] Inf 0.1237 0.7154 0.0396 0.1057 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)          : num [1:20456] -15.4 -12.23 -9.91 -13.69 -12.48 ...
+  .. .. .. .. .. .. .. ..$ log_umi              : num [1:20456] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. .. ..$ genes_log_gmean_step1: logi [1:20456] FALSE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. .. .. .. ..$ step1_theta          : num [1:20456] NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_(Intercept)    : num [1:20456] NA NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_log_umi        : num [1:20456] NA NA NA NA NA ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	4849 obs. of  3 variables:
+  .. .. .. .. .. .. .. ..$ umi        : num [1:4849] 22160 17676 16192 14560 12423 ...
+  .. .. .. .. .. .. .. ..$ log_umi    : num [1:4849] 4.35 4.25 4.21 4.16 4.09 ...
+  .. .. .. .. .. .. .. ..$ cells_step1: logi [1:4849] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -69.6 69.6
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -12.7 12.7
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 4849
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -69.6 69.6
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -12.7 12.7
+  .. .. .. .. .. .. ..@ median_umi        : num 3163
+  .. .. .. .. ..$ counts.9 :Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20720 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:20720] 0.0012 0.01325 0.07948 0.00542 0.01852 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:20720] 0.000835 0.009717 0.118525 0.003763 0.023381 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:20720] 0.0012 0.01665 4.04153 0.00539 2.59264 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:20720] -1.41e-06 -1.26e-03 2.84e-02 -2.93e-04 5.09e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:20720] 0.03 0.298 4.451 0.128 5.233 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:20720] Inf 0.0674 0.5394 Inf 0.1463 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:20720] -15.3 -12.8 -10.3 -13.8 -11.9 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:20720] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	6643 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:6643] 24219 24315 23609 20143 18745 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:6643] 4.38 4.39 4.37 4.3 4.27 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -81.5 81.5
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -14.9 14.9
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -81.5 81.5
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -14.9 14.9
+  .. .. .. .. .. .. ..@ median_umi        : num 2816
+  .. .. .. .. ..$ counts.10:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20363 obs. of  12 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate       : num [1:20363] 0.03113 0.16387 0.01463 0.00213 0.04868 ...
+  .. .. .. .. .. .. .. ..$ gmean                : num [1:20363] 0.02423 0.28252 0.01114 0.00166 0.04298 ...
+  .. .. .. .. .. .. .. ..$ variance             : num [1:20363] 0.05024 13.13404 0.02206 0.00425 0.14165 ...
+  .. .. .. .. .. .. .. ..$ residual_mean        : num [1:20363] -0.01174 0.13558 -0.00116 -0.00105 -0.01777 ...
+  .. .. .. .. .. .. .. ..$ residual_variance    : num [1:20363] 0.374 5.354 0.337 0.106 0.612 ...
+  .. .. .. .. .. .. .. ..$ theta                : num [1:20363] 0.1043 1.0752 0.0547 0.0051 0.1811 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)          : num [1:20363] -12.33 -9.84 -13.12 -14.94 -11.72 ...
+  .. .. .. .. .. .. .. ..$ log_umi              : num [1:20363] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. .. ..$ genes_log_gmean_step1: logi [1:20363] TRUE FALSE FALSE FALSE FALSE FALSE ...
+  .. .. .. .. .. .. .. ..$ step1_theta          : num [1:20363] 0.29 NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_(Intercept)    : num [1:20363] -12.4 NA NA NA NA ...
+  .. .. .. .. .. .. .. ..$ step1_log_umi        : num [1:20363] 2.3 NA NA NA NA ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	3759 obs. of  3 variables:
+  .. .. .. .. .. .. .. ..$ umi        : num [1:3759] 33065 25171 24155 22164 18110 ...
+  .. .. .. .. .. .. .. ..$ log_umi    : num [1:3759] 4.52 4.4 4.38 4.35 4.26 ...
+  .. .. .. .. .. .. .. ..$ cells_step1: logi [1:3759] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -61.3 61.3
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -11.2 11.2
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 3759
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -61.3 61.3
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -11.2 11.2
+  .. .. .. .. .. .. ..@ median_umi        : num 2871
+  .. .. .. .. ..$ counts.11:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	21216 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:21216] 0.012193 0.000802 0.09209 0.002727 0.001444 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:21216] 0.009256 0.000556 0.183835 0.002023 0.001197 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:21216] 1.81e-02 8.02e-04 1.93e+01 3.68e-03 2.88e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:21216] 9.47e-03 -1.06e-06 1.08e-01 3.02e-05 -1.43e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:21216] 0.3639 0.0199 4.5849 0.0878 0.0561 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:21216] 0.05561 Inf 0.55524 0.01211 0.00659 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:21216] -12.76 -15.62 -9.58 -14.23 -14.67 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:21216] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	6233 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:6233] 35000 30747 18872 18746 17947 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:6233] 4.54 4.49 4.28 4.27 4.25 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -78.9 78.9
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -14.4 14.4
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -78.9 78.9
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -14.4 14.4
+  .. .. .. .. .. .. ..@ median_umi        : num 2045
+  .. .. .. .. ..$ counts.12:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	20326 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:20326] 0.00104 0.02562 0.11713 0.00681 0.00296 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:20326] 0.000719 0.018833 0.146111 0.004793 0.003424 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:20326] 0.00104 0.03151 4.14625 0.00721 0.02631 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:20326] -1.25e-06 -7.57e-03 7.76e-02 -1.89e-03 4.03e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:20326] 0.0259 0.4598 4.4469 0.1742 0.4001 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:20326] Inf 0.1299 1.0443 0.024 0.0156 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:20326] -15.7 -12.4 -10.3 -13.7 -14.1 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:20326] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	6753 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:6753] 35211 32859 26565 25264 22564 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:6753] 4.55 4.52 4.42 4.4 4.35 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -82.2 82.2
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -15 15
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -82.2 82.2
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -15 15
+  .. .. .. .. .. .. ..@ median_umi        : num 5815
+  .. .. .. .. ..$ counts.13:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	21467 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:21467] 0.01262 0.00144 0.0494 0.00541 0.00108 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:21467] 0.009746 0.001 0.08741 0.003977 0.000916 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:21467] 0.01943 0.00144 11.36075 0.007 0.00378 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:21467] 1.84e-03 -2.85e-06 1.36e-01 -3.86e-04 -1.32e-06 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:21467] 0.337 0.0359 11.7744 0.1436 0.0943 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:21467] 0.06706 Inf 0.46443 0.02778 0.00457 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:21467] -12.3 -14.6 -10.1 -13.2 -14.5 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:21467] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	5546 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:5546] 32133 31400 25794 18647 17016 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:5546] 4.51 4.5 4.41 4.27 4.23 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -74.5 74.5
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -13.6 13.6
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -74.5 74.5
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -13.6 13.6
+  .. .. .. .. .. .. ..@ median_umi        : num 2062
+  .. .. .. .. ..$ counts.14:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	21844 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:21844] 0.00136 0.02659 0.43866 0.01175 0.02795 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:21844] 0.000943 0.019608 1.50776 0.008531 0.022401 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:21844] 0.00136 0.03342 91.68418 0.01419 0.05637 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:21844] -5.99e-07 -1.61e-02 3.15e-01 -6.23e-03 1.96e-02 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:21844] 0.0339 0.3102 5.2678 0.2684 0.7913 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:21844] Inf 0.0728 2.5116 0.0319 0.0852 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:21844] -15.71 -12.55 -8.15 -13.37 -12.42 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:21844] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	8086 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:8086] 20364 17841 16284 15070 14968 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:8086] 4.31 4.25 4.21 4.18 4.18 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -89.9 89.9
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -16.4 16.4
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -89.9 89.9
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -16.4 16.4
+  .. .. .. .. .. .. ..@ median_umi        : num 6136
+  .. .. .. ..@ counts       :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:135422227] 15 17 24 54 66 97 114 410 914 1189 ...
+  .. .. .. .. .. ..@ p       : int [1:92331] 0 1592 3257 4699 6380 7695 8943 10160 11310 12739 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 24080 92330
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:24080] "A1BG" "A1BG-AS1" "A2M" "A2M-AS1" ...
+  .. .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. .. .. ..@ x       : num [1:135422227] 1 3 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:135422227] 15 17 24 54 66 97 114 410 914 1189 ...
+  .. .. .. .. .. ..@ p       : int [1:92331] 0 1592 3257 4699 6380 7695 8943 10160 11310 12739 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 24080 92330
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:24080] "A1BG" "A1BG-AS1" "A2M" "A2M-AS1" ...
+  .. .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. .. .. ..@ x       : num [1:135422227] 0.693 1.386 0.693 0.693 0.693 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num [1:2000, 1:92330] -0.437 -0.263 -0.474 -0.256 -0.504 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:2000] "A2M" "AAK1" "ABCA1" "ABCA7" ...
+  .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : chr(0) 
+  .. .. .. ..@ meta.features:'data.frame':	24080 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "sct_"
+  .. ..$ integrated:Formal class 'SCTAssay' [package "Seurat"] with 9 slots
+  .. .. .. ..@ SCTModel.list:List of 1
+  .. .. .. .. ..$ refmodel:Formal class 'SCTModel' [package "Seurat"] with 7 slots
+  .. .. .. .. .. .. ..@ feature.attributes:'data.frame':	22709 obs. of  8 variables:
+  .. .. .. .. .. .. .. ..$ detection_rate   : num [1:22709] 0.00194 0.01134 0.04083 0.00486 0.00551 ...
+  .. .. .. .. .. .. .. ..$ gmean            : num [1:22709] 0.00135 0.00833 0.07137 0.00355 0.00436 ...
+  .. .. .. .. .. .. .. ..$ variance         : num [1:22709] 0.00194 0.01443 8.58843 0.00613 0.01032 ...
+  .. .. .. .. .. .. .. ..$ residual_mean    : num [1:22709] -7.81e-07 1.12e-02 2.06e-01 -1.24e-03 -5.45e-03 ...
+  .. .. .. .. .. .. .. ..$ residual_variance: num [1:22709] 0.0485 0.3375 13.135 0.1172 0.1113 ...
+  .. .. .. .. .. .. .. ..$ theta            : num [1:22709] Inf 0.0701 0.4825 0.0263 0.0339 ...
+  .. .. .. .. .. .. .. ..$ (Intercept)      : num [1:22709] -14.9 -13.1 -10.8 -13.9 -13.7 ...
+  .. .. .. .. .. .. .. ..$ log_umi          : num [1:22709] 2.3 2.3 2.3 2.3 2.3 ...
+  .. .. .. .. .. .. ..@ cell.attributes   :'data.frame':	9259 obs. of  2 variables:
+  .. .. .. .. .. .. .. ..$ umi    : num [1:9259] 26100 13020 12489 12107 11581 ...
+  .. .. .. .. .. .. .. ..$ log_umi: num [1:9259] 4.42 4.11 4.1 4.08 4.06 ...
+  .. .. .. .. .. .. ..@ clips             :List of 2
+  .. .. .. .. .. .. .. ..$ vst: num [1:2] -96.2 96.2
+  .. .. .. .. .. .. .. ..$ sct: num [1:2] -17.6 17.6
+  .. .. .. .. .. .. ..@ umi.assay         : chr "RNA"
+  .. .. .. .. .. .. ..@ model             : chr "y ~ log_umi"
+  .. .. .. .. .. .. ..@ arguments         :List of 33
+  .. .. .. .. .. .. .. ..$ glmGamPoi_check          : logi TRUE
+  .. .. .. .. .. .. .. ..$ latent_var               : chr "log_umi"
+  .. .. .. .. .. .. .. ..$ batch_var                : NULL
+  .. .. .. .. .. .. .. ..$ latent_var_nonreg        : NULL
+  .. .. .. .. .. .. .. ..$ n_genes                  : num 2000
+  .. .. .. .. .. .. .. ..$ n_cells                  : num 5000
+  .. .. .. .. .. .. .. ..$ method                   : chr "glmGamPoi_offset"
+  .. .. .. .. .. .. .. ..$ do_regularize            : logi TRUE
+  .. .. .. .. .. .. .. ..$ theta_regularization     : chr "od_factor"
+  .. .. .. .. .. .. .. ..$ res_clip_range           : num [1:2] -96.2 96.2
+  .. .. .. .. .. .. .. ..$ bin_size                 : num 500
+  .. .. .. .. .. .. .. ..$ min_cells                : num 5
+  .. .. .. .. .. .. .. ..$ residual_type            : chr "pearson"
+  .. .. .. .. .. .. .. ..$ return_cell_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_gene_attr         : logi TRUE
+  .. .. .. .. .. .. .. ..$ return_corrected_umi     : logi TRUE
+  .. .. .. .. .. .. .. ..$ min_variance             : chr "umi_median"
+  .. .. .. .. .. .. .. ..$ bw_adjust                : num 3
+  .. .. .. .. .. .. .. ..$ gmean_eps                : num 1
+  .. .. .. .. .. .. .. ..$ theta_estimation_fun     : chr "theta.ml"
+  .. .. .. .. .. .. .. ..$ theta_given              : NULL
+  .. .. .. .. .. .. .. ..$ exclude_poisson          : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean       : logi TRUE
+  .. .. .. .. .. .. .. ..$ use_geometric_mean_offset: logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_intercept            : logi FALSE
+  .. .. .. .. .. .. .. ..$ fix_slope                : logi FALSE
+  .. .. .. .. .. .. .. ..$ scale_factor             : logi NA
+  .. .. .. .. .. .. .. ..$ vst.flavor               : chr "v2"
+  .. .. .. .. .. .. .. ..$ verbosity                : num 0
+  .. .. .. .. .. .. .. ..$ verbose                  : NULL
+  .. .. .. .. .. .. .. ..$ show_progress            : NULL
+  .. .. .. .. .. .. .. ..$ set_min_var              : num 0.04
+  .. .. .. .. .. .. .. ..$ sct.clip.range           : num [1:2] -17.6 17.6
+  .. .. .. .. .. .. ..@ median_umi        : num 2292
+  .. .. .. ..@ counts       : num[0 , 0 ] 
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:184660000] 0 1 2 3 4 5 6 7 8 9 ...
+  .. .. .. .. .. ..@ p       : int [1:92331] 0 2000 4000 6000 8000 10000 12000 14000 16000 18000 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 2000 92330
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:2000] "IGKC" "IGHG1" "IGHG4" "IGHG3" ...
+  .. .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. .. .. ..@ x       : num [1:184660000] -0.4134 -0.2599 -0.1488 -0.2562 -0.0803 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num [1:2000, 1:92330] -0.2967 -0.166 -0.0634 -0.1722 -0.1208 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:2000] "IGKC" "IGHG1" "IGHG4" "IGHG3" ...
+  .. .. .. .. .. ..$ : chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  .. .. .. ..@ assay.orig   : chr "RNA"
+  .. .. .. ..@ var.features : chr [1:2000] "IGKC" "IGHG1" "IGHG4" "IGHG3" ...
+  .. .. .. ..@ meta.features:'data.frame':	2000 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "integrated_"
+  ..@ meta.data   :'data.frame':	92330 obs. of  10 variables:
+  .. ..$ orig.ident     : num [1:92330] 79 79 79 79 79 79 79 79 79 79 ...
+  .. ..$ nCount_RNA     : num [1:92330] 45924 41596 31883 31458 9912 ...
+  .. ..$ nFeature_RNA   : int [1:92330] 7202 7356 6346 6632 3237 3075 3031 2894 2966 2947 ...
+  .. ..$ percent.MT     : num [1:92330] 6.67 4.25 17.02 6.99 10.83 ...
+  .. ..$ percent.HB     : num [1:92330] 0.0196 0.00481 0 0.00954 0 ...
+  .. ..$ percent.RB     : num [1:92330] 11.06 13.35 6.22 8.79 12.89 ...
+  .. ..$ nCount_SCT     : num [1:92330] 2674 2561 2478 2683 2352 ...
+  .. ..$ nFeature_SCT   : int [1:92330] 1592 1665 1442 1681 1315 1248 1217 1150 1429 1176 ...
+  .. ..$ SCT_snn_res.0.8: chr [1:92330] "4" "4" "4" "4" ...
+  .. ..$ seurat_clusters: chr [1:92330] "4" "4" "4" "4" ...
+  ..@ active.assay: chr "integrated"
+  ..@ active.ident: Factor w/ 19 levels "0","1","2","3",..: 5 5 5 5 4 4 4 4 7 4 ...
+  .. ..- attr(*, "names")= chr [1:92330] "612637-79" "698718-79" "509246-79" "101435-79" ...
+  ..@ graphs      : list()
+  ..@ neighbors   : list()
+  ..@ reductions  : list()
+  ..@ images      : list()
+  ..@ project.name: chr "SeuratProject"
+  ..@ misc        : list()
+  ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. ..$ : int [1:3] 5 0 2
+  ..@ commands    :List of 2
+  .. ..$ FindIntegrationAnchors:Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindIntegrationAnchors"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-16 11:57:47"
+  .. .. .. ..@ assay.used : chr [1:15] "SCT" "SCT" "SCT" "SCT" ...
+  .. .. .. ..@ call.string: chr [1:2] "FindIntegrationAnchors(SDataListTransformed, reduction = \"cca\", " "    verbose = F)"
+  .. .. .. ..@ params     :List of 15
+  .. .. .. .. ..$ assay               : chr [1:15] "SCT" "SCT" "SCT" "SCT" ...
+  .. .. .. .. ..$ anchor.features     : chr [1:2000] "IGKC" "IGHG1" "IGHG4" "IGHG3" ...
+  .. .. .. .. ..$ scale               : logi TRUE
+  .. .. .. .. ..$ normalization.method: chr "LogNormalize"
+  .. .. .. .. ..$ reduction           : chr "cca"
+  .. .. .. .. ..$ l2.norm             : logi TRUE
+  .. .. .. .. ..$ dims                : int [1:30] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. .. ..$ k.anchor            : num 5
+  .. .. .. .. ..$ k.filter            : num 200
+  .. .. .. .. ..$ k.score             : num 30
+  .. .. .. .. ..$ max.features        : num 200
+  .. .. .. .. ..$ nn.method           : chr "annoy"
+  .. .. .. .. ..$ n.trees             : num 50
+  .. .. .. .. ..$ eps                 : num 0
+  .. .. .. .. ..$ verbose             : logi FALSE
+  .. ..$ withCallingHandlers   :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "withCallingHandlers"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-09-16 12:15:47"
+  .. .. .. ..@ assay.used : NULL
+  .. .. .. ..@ call.string: chr [1:2] "withCallingHandlers(expr, warning = function(w) if (inherits(w, " "    classes)) tryInvokeRestart(\"muffleWarning\"))"
+  .. .. .. ..@ params     :List of 9
+  .. .. .. .. ..$ new.assay.name      : chr "integrated"
+  .. .. .. .. ..$ normalization.method: chr "SCT"
+  .. .. .. .. ..$ features            : chr [1:2000] "IGKC" "IGHG1" "IGHG4" "IGHG3" ...
+  .. .. .. .. ..$ dims                : int [1:30] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. .. ..$ k.weight            : num 100
+  .. .. .. .. ..$ sd.weight           : num 1
+  .. .. .. .. ..$ preserve.order      : logi FALSE
+  .. .. .. .. ..$ eps                 : num 0
+  .. .. .. .. ..$ verbose             : logi FALSE
+  ..@ tools       :List of 1
+  .. ..$ Integration:Formal class 'IntegrationData' [package "Seurat"] with 7 slots
+  .. .. .. ..@ neighbors         : NULL
+  .. .. .. ..@ weights           : NULL
+  .. .. .. ..@ integration.matrix: NULL
+  .. .. .. ..@ anchors           :'data.frame':	944224 obs. of  5 variables:
+  .. .. .. .. ..$ cell1   : num [1:944224] 1 1 1 1 2 2 2 2 2 3 ...
+  .. .. .. .. ..$ cell2   : num [1:944224] 4 1 345 10 1 4 5 2 10 345 ...
+  .. .. .. .. ..$ score   : num [1:944224] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. ..$ dataset1: int [1:944224] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. ..$ dataset2: int [1:944224] 2 2 2 2 2 2 2 2 2 2 ...
+  .. .. .. ..@ offsets           : NULL
+  .. .. .. ..@ objects.ncell     : NULL
+  .. .. .. ..@ sample.tree       : num [1:14, 1:2] -4 -3 1 -10 2 -12 -14 5 3 6 ...

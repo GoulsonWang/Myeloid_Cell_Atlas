@@ -1,0 +1,56 @@
+Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  ..@ assays      :List of 1
+  .. ..$ RNA:Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ layers    :List of 1
+  .. .. .. .. ..$ counts:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:111804] 14 26 37 39 75 163 164 176 230 244 ...
+  .. .. .. .. .. .. ..@ p       : int [1:1503] 0 49 96 131 171 202 284 405 505 547 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 1000 1502
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:111804] 1 1 1 1 3 1 1 1 1 12 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:1502, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:1502] "AAACCTGAGGTTACCT.Pre_P007_b" "AAACCTGCAAAGGAAG.Pre_P007_b" "AAACCTGCAAGTCTAC.Pre_P007_b" "AAACCTGCAATAAGCA.Pre_P007_b" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. ..$ dim     : int [1:2] 1502 1
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:1502] "AAACCTGAGGTTACCT.Pre_P007_b" "AAACCTGCAAAGGAAG.Pre_P007_b" "AAACCTGCAAGTCTAC.Pre_P007_b" "AAACCTGCAATAAGCA.Pre_P007_b" ...
+  .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:1000, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:1000] "AL627309.1" "AL669831.5" "FAM87B" "LINC00115" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. ..$ dim     : int [1:2] 1000 1
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:1000] "AL627309.1" "AL669831.5" "FAM87B" "LINC00115" ...
+  .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. ..@ default   : int 1
+  .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. ..@ meta.data :'data.frame':	1000 obs. of  0 variables
+  .. .. .. ..@ misc      :List of 1
+  .. .. .. .. ..$ calcN: logi TRUE
+  .. .. .. ..@ key       : chr "rna_"
+  ..@ meta.data   :'data.frame':	1502 obs. of  5 variables:
+  .. ..$ orig.ident  : Factor w/ 1 level "SeuratProject": 1 1 1 1 1 1 1 1 1 1 ...
+  .. ..$ nCount_RNA  : num [1:1502] 1769 3037 1117 1750 652 ...
+  .. ..$ nFeature_RNA: int [1:1502] 818 892 597 757 470 1444 1855 1473 658 1831 ...
+  .. ..$ percent.MT  : num [1:1502] 2.26 2.34 8.59 4.46 4.45 ...
+  .. ..$ percent.HB  : num [1:1502] 0 0 0 0 0 0 0 0 0 0 ...
+  ..@ active.assay: chr "RNA"
+  ..@ active.ident: Factor w/ 1 level "SeuratProject": 1 1 1 1 1 1 1 1 1 1 ...
+  .. ..- attr(*, "names")= chr [1:1502] "AAACCTGAGGTTACCT.Pre_P007_b" "AAACCTGCAAAGGAAG.Pre_P007_b" "AAACCTGCAAGTCTAC.Pre_P007_b" "AAACCTGCAATAAGCA.Pre_P007_b" ...
+  ..@ graphs      : list()
+  ..@ neighbors   : list()
+  ..@ reductions  : list()
+  ..@ images      : list()
+  ..@ project.name: chr "SeuratProject"
+  ..@ misc        : list()
+  ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. ..$ : int [1:3] 5 0 2
+  ..@ commands    : list()
+  ..@ tools       : list()

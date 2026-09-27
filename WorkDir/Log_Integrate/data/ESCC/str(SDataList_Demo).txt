@@ -1,0 +1,109 @@
+List of 2
+ $ :Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  .. ..@ assays      :List of 1
+  .. .. ..$ RNA:Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. .. ..@ layers    :List of 1
+  .. .. .. .. .. ..$ counts:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. .. ..@ i       : int [1:3779469] 20 21 25 35 36 43 46 53 54 64 ...
+  .. .. .. .. .. .. .. ..@ p       : int [1:4671] 0 907 1542 2432 2982 3427 3860 4432 5319 6307 ...
+  .. .. .. .. .. .. .. ..@ Dim     : int [1:2] 17485 4670
+  .. .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..@ x       : num [1:3779469] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. .. ..@ .Data: logi [1:4670, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. ..$ : chr [1:4670] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. .. ..$ dim     : int [1:2] 4670 1
+  .. .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:4670] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. .. ..@ .Data: logi [1:17485, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. ..$ : chr [1:17485] "TSPAN6" "TNMD" "DPM1" "SCYL3" ...
+  .. .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. .. ..$ dim     : int [1:2] 17485 1
+  .. .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:17485] "TSPAN6" "TNMD" "DPM1" "SCYL3" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. ..@ default   : int 1
+  .. .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. .. ..@ meta.data :'data.frame':	17485 obs. of  0 variables
+  .. .. .. .. ..@ misc      : Named list()
+  .. .. .. .. ..@ key       : chr "rna_"
+  .. ..@ meta.data   :'data.frame':	4670 obs. of  4 variables:
+  .. .. ..$ orig.ident  : num [1:4670] 52 52 52 52 52 52 52 52 52 52 ...
+  .. .. ..$ nCount_RNA  : num [1:4670] 2289 1681 2328 1632 1498 ...
+  .. .. ..$ nFeature_RNA: int [1:4670] 911 636 893 552 447 436 572 890 992 406 ...
+  .. .. ..$ percent.MT  : num [1:4670] 8.39 8.09 10.35 5.88 38.58 ...
+  .. ..@ active.assay: chr "RNA"
+  .. ..@ active.ident: Factor w/ 1 level "SeuratProject": 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. ..- attr(*, "names")= chr [1:4670] "AAACATCGAAACATCGTGAAGAGA-52" "AAACATCGAAGACGGAAGTACAAG-52" "AAACATCGAATCCGTCACCACTGT-52" "AAACATCGAATCCGTCCCGACAAC-52" ...
+  .. ..@ graphs      : list()
+  .. ..@ neighbors   : list()
+  .. ..@ reductions  : list()
+  .. ..@ images      : list()
+  .. ..@ project.name: chr "SeuratProject"
+  .. ..@ misc        : list()
+  .. ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. .. ..$ : int [1:3] 5 0 2
+  .. ..@ commands    : list()
+  .. ..@ tools       : list()
+ $ :Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  .. ..@ assays      :List of 1
+  .. .. ..$ RNA:Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. .. ..@ layers    :List of 1
+  .. .. .. .. .. ..$ counts:Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. .. ..@ i       : int [1:10906526] 5 21 30 31 38 53 64 67 68 69 ...
+  .. .. .. .. .. .. .. ..@ p       : int [1:5766] 0 1567 3078 4466 6553 9082 11554 14022 16104 17821 ...
+  .. .. .. .. .. .. .. ..@ Dim     : int [1:2] 20522 5765
+  .. .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..@ x       : num [1:10906526] 4 1 3 1 1 1 1 1 2 1 ...
+  .. .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. .. ..@ .Data: logi [1:5765, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. ..$ : chr [1:5765] "AAACATCGAACAACCACACCTTAC-53" "AAACATCGAACAACCACCAGTTCA-53" "AAACATCGAACAACCAGCTCGGTA-53" "AAACATCGAACCGAGACACCTTAC-53" ...
+  .. .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. .. ..$ dim     : int [1:2] 5765 1
+  .. .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:5765] "AAACATCGAACAACCACACCTTAC-53" "AAACATCGAACAACCACCAGTTCA-53" "AAACATCGAACAACCAGCTCGGTA-53" "AAACATCGAACCGAGACACCTTAC-53" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. .. ..@ .Data: logi [1:20522, 1] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. ..$ : chr [1:20522] "TSPAN6" "TNMD" "DPM1" "SCYL3" ...
+  .. .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. .. .. ..$ dim     : int [1:2] 20522 1
+  .. .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:20522] "TSPAN6" "TNMD" "DPM1" "SCYL3" ...
+  .. .. .. .. .. .. .. ..$ : chr "counts"
+  .. .. .. .. ..@ default   : int 1
+  .. .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. .. ..@ meta.data :'data.frame':	20522 obs. of  0 variables
+  .. .. .. .. ..@ misc      : Named list()
+  .. .. .. .. ..@ key       : chr "rna_"
+  .. ..@ meta.data   :'data.frame':	5765 obs. of  4 variables:
+  .. .. ..$ orig.ident  : num [1:5765] 53 53 53 53 53 53 53 53 53 53 ...
+  .. .. ..$ nCount_RNA  : num [1:5765] 5599 4553 4357 7538 11162 ...
+  .. .. ..$ nFeature_RNA: int [1:5765] 1569 1511 1390 2087 2530 2475 2473 2084 1719 1751 ...
+  .. .. ..$ percent.MT  : num [1:5765] 14.7 6.19 10.67 8.5 5.12 ...
+  .. ..@ active.assay: chr "RNA"
+  .. ..@ active.ident: Factor w/ 1 level "SeuratProject": 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. ..- attr(*, "names")= chr [1:5765] "AAACATCGAACAACCACACCTTAC-53" "AAACATCGAACAACCACCAGTTCA-53" "AAACATCGAACAACCAGCTCGGTA-53" "AAACATCGAACCGAGACACCTTAC-53" ...
+  .. ..@ graphs      : list()
+  .. ..@ neighbors   : list()
+  .. ..@ reductions  : list()
+  .. ..@ images      : list()
+  .. ..@ project.name: chr "SeuratProject"
+  .. ..@ misc        : list()
+  .. ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. .. ..$ : int [1:3] 5 0 2
+  .. ..@ commands    : list()
+  .. ..@ tools       : list()
